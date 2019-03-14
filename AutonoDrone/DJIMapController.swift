@@ -53,6 +53,7 @@ class DJIMapController: NSObject {
         var locations = editPoints.map { $0.coordinate }
         let polyline = MKPolyline(coordinates: &locations, count: locations.count)
         mapView?.addOverlay(polyline)
+        
     }
     
     func cleanAllPoints(with mapView: MKMapView?) {

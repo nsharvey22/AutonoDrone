@@ -13,7 +13,21 @@ import DJIWidget
 import CoreLocation
 import GLKit
 
-class DefaultLayoutViewController: DUXDefaultLayoutViewController, DJISDKManagerDelegate, CLLocationManagerDelegate, MKMapViewDelegate, DJIFlightControllerDelegate, DJIGSButtonViewControllerDelegate, DJIWaypointConfigViewControllerDelegate {
+class DefaultLayoutViewController: DUXDefaultLayoutViewController, DJISDKManagerDelegate, CLLocationManagerDelegate, MKMapViewDelegate, DJIFlightControllerDelegate, DJIGSButtonViewControllerDelegate, DJIWaypointConfigViewControllerDelegate, WaypointOptionsViewControllerDelegate {
+    // MARK:- WaypointOptionsViewControllerDelegate
+    
+    func changeHeading(in waypointOptionVC: WaypointOptionsViewController?) {
+        selectedWaypoint?.heading = Int(roundf((waypointOptionVC?.headingSlider.value)!))
+    }
+    
+    func changeGimbalPitch(in waypointOptionVC: WaypointOptionsViewController?) {
+        selectedWaypoint?.gimbalPitch = roundf((waypointOptionVC?.gimbalSlider.value)!)
+    }
+    
+    func changeAltitude(in waypointOptionVC: WaypointOptionsViewController?) {
+        selectedWaypoint?.altitude = roundf((waypointOptionVC?.altitudeSlider.value)!)
+    }
+    
     
     // MARK:- DJIWaypointConfigViewControllerDelegate
     
@@ -32,47 +46,47 @@ class DefaultLayoutViewController: DUXDefaultLayoutViewController, DJISDKManager
             self.visualEffectView.alpha = 0
         })
         
-        let wayPoints = mapController.wayPoints
-        
-        if wayPoints == nil || wayPoints().count < 2 {
-            //DJIWaypointMissionMinimumWaypointCount is 2.
-            print("No or not enough waypoints for mission")
-        }
-        
-        if (waypointMission != nil) {
-            waypointMission?.removeAllWaypoints()
-        } else {
-            waypointMission = DJIMutableWaypointMission()
-        }
-        
-        for i in 0..<wayPoints().count {
-            let location = wayPoints()[i] as? CLLocation
-            if CLLocationCoordinate2DIsValid((location?.coordinate)!) {
-                var waypoint: DJIWaypoint? = nil
-                if let coordinate = location?.coordinate {
-                    waypoint = DJIWaypoint(coordinate: coordinate)
-                }
-                if let text = self.waypointConfigVC?.altitudeTextField.text {
-                    waypoint?.altitude = Float(text)!
-                }
-                waypointMission?.add(waypoint!)
-            }
-        }
-        
-        if let text = self.waypointConfigVC?.maxFlightSpeedTextField.text {
-            waypointMission?.maxFlightSpeed = Float(text)!
-        }
-        if let text = self.waypointConfigVC?.autoFlightSpeedTextField.text {
-            waypointMission?.autoFlightSpeed = Float(text)!
-        }
-        if let selected = self.waypointConfigVC?.headingSegmentedControl.selectedSegmentIndex {
-            waypointMission?.headingMode = DJIWaypointMissionHeadingMode(rawValue: UInt(selected))!
-        }
-        if let selected = self.waypointConfigVC?.actionSegmentedControl.selectedSegmentIndex {
-            waypointMission?.finishedAction = DJIWaypointMissionFinishedAction(rawValue: UInt8(selected))!
-            
-        }
-        
+//        let wayPoints = mapController.wayPoints
+//
+//        if wayPoints == nil || wayPoints().count < 2 {
+//            //DJIWaypointMissionMinimumWaypointCount is 2.
+//            print("No or not enough waypoints for mission")
+//        }
+//
+//        if (waypointMission != nil) {
+//            waypointMission?.removeAllWaypoints()
+//        } else {
+//            waypointMission = DJIMutableWaypointMission()
+//        }
+//
+//        for i in 0..<wayPoints().count {
+//            let location = wayPoints()[i] as? CLLocation
+//            if CLLocationCoordinate2DIsValid((location?.coordinate)!) {
+//                var waypoint: DJIWaypoint? = nil
+//                if let coordinate = location?.coordinate {
+//                    waypoint = DJIWaypoint(coordinate: coordinate)
+//                }
+//                if let text = self.waypointConfigVC?.altitudeTextField.text {
+//                    waypoint?.altitude = Float(text)!
+//                }
+//                waypointMission?.add(waypoint!)
+//            }
+//        }
+//
+//        if let text = self.waypointConfigVC?.maxFlightSpeedTextField.text {
+//            waypointMission?.maxFlightSpeed = Float(text)!
+//        }
+//        if let text = self.waypointConfigVC?.autoFlightSpeedTextField.text {
+//            waypointMission?.autoFlightSpeed = Float(text)!
+//        }
+//        if let selected = self.waypointConfigVC?.headingSegmentedControl.selectedSegmentIndex {
+//            waypointMission?.headingMode = DJIWaypointMissionHeadingMode(rawValue: UInt(selected))!
+//        }
+//        if let selected = self.waypointConfigVC?.actionSegmentedControl.selectedSegmentIndex {
+//            waypointMission?.finishedAction = DJIWaypointMissionFinishedAction(rawValue: UInt8(selected))!
+//
+//        }
+        print(waypointMission!)
         missionOperator()?.load(waypointMission!)
         
         
@@ -237,6 +251,7 @@ class DefaultLayoutViewController: DUXDefaultLayoutViewController, DJISDKManager
     private var waypointConfigVC: DJIWaypointConfigViewController?
     private var waypointOptVC: WaypointOptionsViewController?
     var waypointMission: DJIMutableWaypointMission?
+    var selectedWaypoint: DJIWaypoint?
     
     var mapView: MKMapView?
     let mapController:DJIMapController = DJIMapController()
@@ -631,6 +646,9 @@ class DefaultLayoutViewController: DUXDefaultLayoutViewController, DJISDKManager
     func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
         if view is MKMarkerAnnotationView {
             print("selected waypoint: \(String(describing: view.annotation?.title))")
+            let num = Int(((view.annotation?.title)!)!)
+            selectedWaypoint = waypointMission?.allWaypoints()[num! - 1]
+            
         }
     }
     
@@ -666,8 +684,21 @@ class DefaultLayoutViewController: DUXDefaultLayoutViewController, DJISDKManager
                     gsButtonVC?.floaty.open()
                 }
                 print("added point")
-                var waypointNum:[Int] = [1]
-                waypointNum.append(waypointNum.last! + 1)
+
+                if (waypointMission == nil) {
+                    print("created new mission")
+                    waypointMission = DJIMutableWaypointMission()
+                }
+                let coordinate: CLLocationCoordinate2D? = mapView?.convert(point!, toCoordinateFrom: mapView)
+                var waypoint: DJIWaypoint? = nil
+                if coordinate != nil {
+                    print("added waypoint to mission")
+                    waypoint = DJIWaypoint(coordinate: coordinate!)
+                   // waypoint?.altitude = Float(text)!
+                    waypointMission?.add(waypoint!)
+                }
+            
+                print("all waypoints: ", waypointMission?.allWaypoints())
             }
         }
     }
