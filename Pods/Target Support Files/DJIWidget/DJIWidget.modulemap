@@ -1,0 +1,6 @@
+framework module DJIWidget {
+  umbrella header "DJIWidget-umbrella.h"
+
+  export *
+  module * { export * }
+}

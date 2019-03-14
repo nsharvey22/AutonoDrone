@@ -1,0 +1,494 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		312C649875017E1AC09B3F1E /* Pods_Dronorama.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B1FF0DF963663EA62B56E41 /* Pods_Dronorama.framework */; };
+		9A3535B52232C3F700E22590 /* DJIMapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3535B42232C3F700E22590 /* DJIMapController.swift */; };
+		9A3535B72232C58400E22590 /* DJIAircraftAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3535B62232C58400E22590 /* DJIAircraftAnnotation.swift */; };
+		9A3535B92232C5C000E22590 /* DJIAircraftAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3535B82232C5C000E22590 /* DJIAircraftAnnotationView.swift */; };
+		9A3535BC22335FCF00E22590 /* DJIWaypointConfigViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3535BA22335FCF00E22590 /* DJIWaypointConfigViewController.swift */; };
+		9A3535BF22335FFD00E22590 /* DJIWaypointConfigViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A3535BE22335FFD00E22590 /* DJIWaypointConfigViewController.xib */; };
+		9A3535C122337F6B00E22590 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3535C022337F6B00E22590 /* MapViewController.swift */; };
+		9A3535C32233AB5A00E22590 /* FPVViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3535C22233AB5A00E22590 /* FPVViewController.swift */; };
+		9A3535C72238238100E22590 /* Pulsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3535C62238238100E22590 /* Pulsing.swift */; };
+		9A3535CA223A842500E22590 /* WaypointOptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3535C8223A842500E22590 /* WaypointOptionsViewController.swift */; };
+		9A3535CB223A842500E22590 /* WaypointOptionsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A3535C9223A842500E22590 /* WaypointOptionsViewController.xib */; };
+		9A597D042230DA8000162B2B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A597D032230DA8000162B2B /* AppDelegate.swift */; };
+		9A597D092230DA8000162B2B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A597D072230DA8000162B2B /* Main.storyboard */; };
+		9A597D0B2230DA8000162B2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A597D0A2230DA8000162B2B /* Assets.xcassets */; };
+		9A597D0E2230DA8000162B2B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A597D0C2230DA8000162B2B /* LaunchScreen.storyboard */; };
+		9A597D162230DC7000162B2B /* DefaultLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A597D152230DC7000162B2B /* DefaultLayoutViewController.swift */; };
+		9A597D1A2230DE2800162B2B /* FFmpeg.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A597D192230DE2800162B2B /* FFmpeg.framework */; };
+		9A597D1C223149C800162B2B /* DemoUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A597D1B223149C800162B2B /* DemoUtility.swift */; };
+		9A597D1F223154FC00162B2B /* DJIGSButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A597D1D223154FC00162B2B /* DJIGSButtonViewController.swift */; };
+		9A597D24223155B000162B2B /* DJIGSButtonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A597D23223155B000162B2B /* DJIGSButtonViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1B1FF0DF963663EA62B56E41 /* Pods_Dronorama.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dronorama.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AE0F746C28FD5930A43C007 /* Pods-Dronorama.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dronorama.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Dronorama/Pods-Dronorama.debug.xcconfig"; sourceTree = "<group>"; };
+		978A8B0C0B8C08CE9E8C02E4 /* Pods-Dronorama.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dronorama.release.xcconfig"; path = "Pods/Target Support Files/Pods-Dronorama/Pods-Dronorama.release.xcconfig"; sourceTree = "<group>"; };
+		9A3535B42232C3F700E22590 /* DJIMapController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DJIMapController.swift; sourceTree = "<group>"; };
+		9A3535B62232C58400E22590 /* DJIAircraftAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DJIAircraftAnnotation.swift; sourceTree = "<group>"; };
+		9A3535B82232C5C000E22590 /* DJIAircraftAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DJIAircraftAnnotationView.swift; sourceTree = "<group>"; };
+		9A3535BA22335FCF00E22590 /* DJIWaypointConfigViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DJIWaypointConfigViewController.swift; sourceTree = "<group>"; };
+		9A3535BE22335FFD00E22590 /* DJIWaypointConfigViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DJIWaypointConfigViewController.xib; sourceTree = "<group>"; };
+		9A3535C022337F6B00E22590 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		9A3535C22233AB5A00E22590 /* FPVViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FPVViewController.swift; sourceTree = "<group>"; };
+		9A3535C62238238100E22590 /* Pulsing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pulsing.swift; sourceTree = "<group>"; };
+		9A3535C8223A842500E22590 /* WaypointOptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaypointOptionsViewController.swift; sourceTree = "<group>"; };
+		9A3535C9223A842500E22590 /* WaypointOptionsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WaypointOptionsViewController.xib; sourceTree = "<group>"; };
+		9A597D002230DA8000162B2B /* Dronorama.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dronorama.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A597D032230DA8000162B2B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9A597D082230DA8000162B2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9A597D0A2230DA8000162B2B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9A597D0D2230DA8000162B2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9A597D0F2230DA8000162B2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A597D152230DC7000162B2B /* DefaultLayoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultLayoutViewController.swift; sourceTree = "<group>"; };
+		9A597D192230DE2800162B2B /* FFmpeg.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FFmpeg.framework; sourceTree = "<group>"; };
+		9A597D1B223149C800162B2B /* DemoUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoUtility.swift; sourceTree = "<group>"; };
+		9A597D1D223154FC00162B2B /* DJIGSButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DJIGSButtonViewController.swift; sourceTree = "<group>"; };
+		9A597D23223155B000162B2B /* DJIGSButtonViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DJIGSButtonViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9A597CFD2230DA8000162B2B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				312C649875017E1AC09B3F1E /* Pods_Dronorama.framework in Frameworks */,
+				9A597D1A2230DE2800162B2B /* FFmpeg.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9A597CF72230DA8000162B2B = {
+			isa = PBXGroup;
+			children = (
+				9A597D022230DA8000162B2B /* Dronorama */,
+				9A597D012230DA8000162B2B /* Products */,
+				F449EA646A137DB232926011 /* Pods */,
+				CB66B13F66F506510AAAEE1C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9A597D012230DA8000162B2B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9A597D002230DA8000162B2B /* Dronorama.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9A597D022230DA8000162B2B /* Dronorama */ = {
+			isa = PBXGroup;
+			children = (
+				9A597D032230DA8000162B2B /* AppDelegate.swift */,
+				9A597D152230DC7000162B2B /* DefaultLayoutViewController.swift */,
+				9A597D072230DA8000162B2B /* Main.storyboard */,
+				9A597D0A2230DA8000162B2B /* Assets.xcassets */,
+				9A597D0C2230DA8000162B2B /* LaunchScreen.storyboard */,
+				9A597D0F2230DA8000162B2B /* Info.plist */,
+				9A597D1B223149C800162B2B /* DemoUtility.swift */,
+				9A597D1D223154FC00162B2B /* DJIGSButtonViewController.swift */,
+				9A597D23223155B000162B2B /* DJIGSButtonViewController.xib */,
+				9A3535B42232C3F700E22590 /* DJIMapController.swift */,
+				9A3535B62232C58400E22590 /* DJIAircraftAnnotation.swift */,
+				9A3535B82232C5C000E22590 /* DJIAircraftAnnotationView.swift */,
+				9A3535BA22335FCF00E22590 /* DJIWaypointConfigViewController.swift */,
+				9A3535BE22335FFD00E22590 /* DJIWaypointConfigViewController.xib */,
+				9A3535C022337F6B00E22590 /* MapViewController.swift */,
+				9A3535C22233AB5A00E22590 /* FPVViewController.swift */,
+				9A3535C62238238100E22590 /* Pulsing.swift */,
+				9A3535C8223A842500E22590 /* WaypointOptionsViewController.swift */,
+				9A3535C9223A842500E22590 /* WaypointOptionsViewController.xib */,
+			);
+			path = Dronorama;
+			sourceTree = "<group>";
+		};
+		CB66B13F66F506510AAAEE1C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9A597D192230DE2800162B2B /* FFmpeg.framework */,
+				1B1FF0DF963663EA62B56E41 /* Pods_Dronorama.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F449EA646A137DB232926011 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6AE0F746C28FD5930A43C007 /* Pods-Dronorama.debug.xcconfig */,
+				978A8B0C0B8C08CE9E8C02E4 /* Pods-Dronorama.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9A597CFF2230DA8000162B2B /* Dronorama */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A597D122230DA8000162B2B /* Build configuration list for PBXNativeTarget "Dronorama" */;
+			buildPhases = (
+				816D499615BABC42BEA0E4F4 /* [CP] Check Pods Manifest.lock */,
+				9A597CFC2230DA8000162B2B /* Sources */,
+				9A597CFD2230DA8000162B2B /* Frameworks */,
+				9A597CFE2230DA8000162B2B /* Resources */,
+				F0C2B23333B112C8C2391323 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Dronorama;
+			productName = Dronorama;
+			productReference = 9A597D002230DA8000162B2B /* Dronorama.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9A597CF82230DA8000162B2B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Nick Harvey";
+				TargetAttributes = {
+					9A597CFF2230DA8000162B2B = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 9A597CFB2230DA8000162B2B /* Build configuration list for PBXProject "Dronorama" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9A597CF72230DA8000162B2B;
+			productRefGroup = 9A597D012230DA8000162B2B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9A597CFF2230DA8000162B2B /* Dronorama */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9A597CFE2230DA8000162B2B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A597D0E2230DA8000162B2B /* LaunchScreen.storyboard in Resources */,
+				9A3535BF22335FFD00E22590 /* DJIWaypointConfigViewController.xib in Resources */,
+				9A597D0B2230DA8000162B2B /* Assets.xcassets in Resources */,
+				9A597D092230DA8000162B2B /* Main.storyboard in Resources */,
+				9A3535CB223A842500E22590 /* WaypointOptionsViewController.xib in Resources */,
+				9A597D24223155B000162B2B /* DJIGSButtonViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		816D499615BABC42BEA0E4F4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Dronorama-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F0C2B23333B112C8C2391323 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Dronorama/Pods-Dronorama-frameworks.sh",
+				"${PODS_ROOT}/DJI-SDK-iOS/iOS_Mobile_SDK/DJISDK.framework",
+				"${PODS_ROOT}/DJI-UXSDK-iOS/iOS_UXSDK/DJIUXSDK.framework",
+				"${PODS_ROOT}/DJIWidget/FFmpeg/FFmpeg.framework",
+				"${BUILT_PRODUCTS_DIR}/DJIWidget/DJIWidget.framework",
+				"${BUILT_PRODUCTS_DIR}/Floaty/Floaty.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DJISDK.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DJIUXSDK.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FFmpeg.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DJIWidget.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Floaty.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Dronorama/Pods-Dronorama-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9A597CFC2230DA8000162B2B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A3535B52232C3F700E22590 /* DJIMapController.swift in Sources */,
+				9A597D162230DC7000162B2B /* DefaultLayoutViewController.swift in Sources */,
+				9A597D042230DA8000162B2B /* AppDelegate.swift in Sources */,
+				9A3535B92232C5C000E22590 /* DJIAircraftAnnotationView.swift in Sources */,
+				9A3535CA223A842500E22590 /* WaypointOptionsViewController.swift in Sources */,
+				9A3535C122337F6B00E22590 /* MapViewController.swift in Sources */,
+				9A597D1F223154FC00162B2B /* DJIGSButtonViewController.swift in Sources */,
+				9A3535BC22335FCF00E22590 /* DJIWaypointConfigViewController.swift in Sources */,
+				9A3535B72232C58400E22590 /* DJIAircraftAnnotation.swift in Sources */,
+				9A597D1C223149C800162B2B /* DemoUtility.swift in Sources */,
+				9A3535C72238238100E22590 /* Pulsing.swift in Sources */,
+				9A3535C32233AB5A00E22590 /* FPVViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9A597D072230DA8000162B2B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9A597D082230DA8000162B2B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9A597D0C2230DA8000162B2B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9A597D0D2230DA8000162B2B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9A597D102230DA8000162B2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9A597D112230DA8000162B2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9A597D132230DA8000162B2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6AE0F746C28FD5930A43C007 /* Pods-Dronorama.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CWK72AZ43K;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = Dronorama/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nickharvey.Dronorama;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9A597D142230DA8000162B2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 978A8B0C0B8C08CE9E8C02E4 /* Pods-Dronorama.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CWK72AZ43K;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = Dronorama/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nickharvey.Dronorama;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9A597CFB2230DA8000162B2B /* Build configuration list for PBXProject "Dronorama" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A597D102230DA8000162B2B /* Debug */,
+				9A597D112230DA8000162B2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A597D122230DA8000162B2B /* Build configuration list for PBXNativeTarget "Dronorama" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A597D132230DA8000162B2B /* Debug */,
+				9A597D142230DA8000162B2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9A597CF82230DA8000162B2B /* Project object */;
+}

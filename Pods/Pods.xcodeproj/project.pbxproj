@@ -1,0 +1,1516 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01B12650B193CBBC9680B0CC43C2B200 /* DJIImageCalibrationFrameQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C4F5BC29BC81971E350686A7A56ECBA /* DJIImageCalibrationFrameQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0318E0E21B1F8AF8A712B789D3B9D550 /* DJIDecodeFrameRateMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = D7FD750C9F10E98128DB203D7CB79E74 /* DJIDecodeFrameRateMonitor.m */; };
+		051E770939684828A48621D216D1B9A4 /* DJILiveViewRenderColorMatrixFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = D5FF15C6E05C41092590B18E67FF2C06 /* DJILiveViewRenderColorMatrixFilter.m */; };
+		063EEBA97E640BE2FDEA58687EAE5FA9 /* DJILiveViewColorMonitorFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 8346BF8FC23339EEE2DBC016D0A4A580 /* DJILiveViewColorMonitorFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		078E34666EABCA1314F93C50EEBE8927 /* DJIRtmpMuxer.h in Headers */ = {isa = PBXBuildFile; fileRef = 90F1081258C4AE88C9D3DAA4285A3A28 /* DJIRtmpMuxer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		079062FCE7109868115B94E1DACDE20C /* NSError+DJIVTH264CompressSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 78153FF977A3BEF8341DB957A42BB7B7 /* NSError+DJIVTH264CompressSession.m */; };
+		0A64533FB0316FF4F041670481E1C50D /* DJIRTPlayerRenderView.h in Headers */ = {isa = PBXBuildFile; fileRef = 70A4CAF6DD18125049BE74D8CEE0BFD3 /* DJIRTPlayerRenderView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0C4EE12D552F40C5458C8D93E478EA31 /* DJIReverseDLogFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = C1FCC72A45959D1CEEE4B69E090001C5 /* DJIReverseDLogFilter.m */; };
+		0C71F00DF276F48265B422BA1C85B4D1 /* DJIRtmpMuxer.m in Sources */ = {isa = PBXBuildFile; fileRef = C615D816C0741C281ABD54B337221882 /* DJIRtmpMuxer.m */; };
+		0EC6CA039B826C06F2E028E55BB656A6 /* DJIVideoFrameSyncPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = C2F3B0A22C1160C45849A878E8BDBBC7 /* DJIVideoFrameSyncPoint.m */; };
+		0FE5474C59C51B009B6AA554CB78FBA4 /* DJIImageCalibrateColorConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = 971E71823EF446EA9C6958155F20A2C0 /* DJIImageCalibrateColorConverter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		133930B436A0E27015C068D040BB0B3C /* DJIVTH264DecoderIFrameData.h in Headers */ = {isa = PBXBuildFile; fileRef = 9823807AB148A75347280533BBA0ED57 /* DJIVTH264DecoderIFrameData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		14B93D723CD1167257BA83F7DB151BD4 /* DJILiveViewRenderDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E2BD44A3D08DDBB55BCD9637F09C5D5 /* DJILiveViewRenderDataSource.m */; };
+		183FD1CD4ED903AE2199719329CC934E /* DJILiveViewRenderPass.h in Headers */ = {isa = PBXBuildFile; fileRef = 550DFA63ABB61160BECD44FC3A98AC63 /* DJILiveViewRenderPass.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1855A74386D50881B1D0EB4CECB1FF15 /* DJIVTH264CompressSession.h in Headers */ = {isa = PBXBuildFile; fileRef = 0475A3D8815214659F53A4A26E028681 /* DJIVTH264CompressSession.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		185666D8E4745CE99CD56E35FF0DF109 /* DJIVTH264Encoder.h in Headers */ = {isa = PBXBuildFile; fileRef = C7CB7950D8BEA635539AE964DBA4A849 /* DJIVTH264Encoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A3B4B1359BAF88351B2B21589DC17F6 /* DJILiveViewRenderTexture.m in Sources */ = {isa = PBXBuildFile; fileRef = A6921F5A4DF45D9C2143A76CDF149D80 /* DJILiveViewRenderTexture.m */; };
+		1C164EF5C474C05CBB32105A156E5A1E /* DJIVideoWriterContext.m in Sources */ = {isa = PBXBuildFile; fileRef = DA04E687104BABAC8681231003747004 /* DJIVideoWriterContext.m */; };
+		1D40D37B369B8935A026049C7882F402 /* DJIMovieGLView.h in Headers */ = {isa = PBXBuildFile; fileRef = E37C27C43F066628DDCAFDD97907047E /* DJIMovieGLView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20C9206CA819D1ADDB6E5BE516C69C90 /* DJIImageCalibrateColorConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E4512FCBB85A92B5ADA1DB7182C0E5 /* DJIImageCalibrateColorConverter.m */; };
+		226C8EDA92BE7C365B424A336C3ED822 /* DJIJpegStreamImageDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = BD13B7E5BFA859514FD91CC13DD83148 /* DJIJpegStreamImageDecoder.m */; };
+		23728654CB62B77FA85FE88AB5CA274C /* FloatyDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEF0C9D2E9455F9964784D7A8F04994 /* FloatyDelegate.swift */; };
+		244C567AA378CBE88870661E24623494 /* FloatyItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41180D5BEEAAEE51E1838D8DBE846155 /* FloatyItem.swift */; };
+		24BA6ABFF18B4666A933ADA0A7795702 /* Floaty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B5DAEDF604C91B4F40BBE2D4F899FB /* Floaty.swift */; };
+		268A753E5FA33F19EEE43692B3AB573A /* DJIVideoPoolStructs.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C90000A591BCBA199AA2038E3528A6F /* DJIVideoPoolStructs.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		26C5F660E819B9ECFF0E546AF61779B1 /* FloatyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFBC98DDFC3EA94D4A4F699816A925A /* FloatyViewController.swift */; };
+		274C5B1D67D1057BD31F2E72B199D857 /* DJILiveViewRenderDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 2539F3E004F8530D7BB9B2B88F9CACEC /* DJILiveViewRenderDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		293EA4FC750D3444B761B100EEAB5998 /* DJIVTH264DecoderIFrameData.m in Sources */ = {isa = PBXBuildFile; fileRef = F76FF5748E627368487AC8ABCE2D550B /* DJIVTH264DecoderIFrameData.m */; };
+		2A3CB4488AA82BAA01101589793B0517 /* DJIH264PocQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB803F5F3AC4804A7C4DB9338A37402 /* DJIH264PocQueue.m */; };
+		2A8D96CF63136307DEB707B125E7B0AE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40CB39E715FBCDAA142E6513E126200A /* Foundation.framework */; };
+		2B8E3BE6D56942C94195A2047B25F83C /* FloatyWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775D32C109BA1AB640AC2A83F0E28268 /* FloatyWindow.swift */; };
+		2BC8383571850CEE31B0A828E2DB5BD5 /* DJIImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = F8C7551292403CD1074AB98ED562D095 /* DJIImageCache.m */; };
+		2D23EC2A929054BB47AE4A8DF06FCA7C /* DJIWidget-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F1557340DA422253A042F7AA72AAA0D /* DJIWidget-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2D49459207F7D7529311E9868941E551 /* DJILiveViewRenderPicutre.h in Headers */ = {isa = PBXBuildFile; fileRef = D9FE2B6A28DEBF58C5C41FE452691890 /* DJILiveViewRenderPicutre.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FADB922E0723CF135DC8E72812D13AF /* DJILiveViewRenderFocusWarningFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 12C5BA50FAE9F6D2D72D45AF35EA13A9 /* DJILiveViewRenderFocusWarningFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		35C67DAAE2538D2FB8B257450EC47E97 /* FloatyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CFC2287FADF9DFFF968CD84C847388 /* FloatyManager.swift */; };
+		365D48078754B079D21B5218A6576891 /* DJIRtmpIFrameProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FD53DB9E6B5FA30CF1629606465C702 /* DJIRtmpIFrameProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3669BD6065B8ACEBDFF3D69117960994 /* DJIImageCalibrateColorConverter_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = AFA9BD719CA8F6A8C3FDCF5D91E5F2C8 /* DJIImageCalibrateColorConverter_Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		36C1B59B3480FFA5E7ED1FF1E8D33C09 /* DJIVideoFeedCachingSession.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CD9F476124FCA1E3C93A1EDF050D0AE /* DJIVideoFeedCachingSession.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3980D4323E8FFB9203985E056911B905 /* DJIVideoHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 81AC6010B98340862348F952D07223B6 /* DJIVideoHelper.m */; };
+		3E20F1E591895B63B8A01F82F0B8E795 /* DJIVideoWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8CE05F583663EC2142AB7FB6C7391C /* DJIVideoWriter.m */; };
+		3E4FE9E267BD18D73B1C1D718340C948 /* DJIMavic2ZoomCameraImageCalibrateFilterDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 8944DBBF1240401F80D465C8BF070564 /* DJIMavic2ZoomCameraImageCalibrateFilterDataSource.m */; };
+		3E9CAA380C4271901782AD35680C95CE /* DJIVideoWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = 297D918407D6A24C328A6123A8366AB2 /* DJIVideoWriter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4414C24123A14C05DB9816C24E7AD9AA /* DJIImageCacheQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = AF2CDF7B732610D3494CF714626B787E /* DJIImageCacheQueue.m */; };
+		459933EACD049323EFC820A42A30624A /* DJIH264VTDecode.h in Headers */ = {isa = PBXBuildFile; fileRef = 3685847C6F907ABCAAA2D1F6872F0A6B /* DJIH264VTDecode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		45C5CDE41F59698E6C862F6F0D01F85F /* DJILiveViewRenderProgram.h in Headers */ = {isa = PBXBuildFile; fileRef = CDE25FD507D209254204A1B7D76C0224 /* DJILiveViewRenderProgram.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4731D2CF81F13AFC2A2E7C855C8B85C4 /* DJILiveViewRenderCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 687206A2B151F86BB9147D357B729FCF /* DJILiveViewRenderCommon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		47F462277A47F6CE95F68584AEBCE178 /* DJIVideoPreviewerH264Parser.h in Headers */ = {isa = PBXBuildFile; fileRef = 37FE9247CD5834A637B184A5E5A58A07 /* DJIVideoPreviewerH264Parser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C5D8FBADBFB025CE8F9E3FBF5E934F3 /* DJIVideoFeedCachingSession.m in Sources */ = {isa = PBXBuildFile; fileRef = AF791B5A669DCCC6E05A54AB1AC4A317 /* DJIVideoFeedCachingSession.m */; };
+		4C683F1D39DBB5B5C9A32D1E43B5B6DC /* Floaty-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ED05D7E0D7646C034832EF1F60194B74 /* Floaty-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4D5FB512DF233B61724E43B4AD86157B /* DJILiveViewRenderScaleFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F200F8CEEED6EA6868786315C7AD105 /* DJILiveViewRenderScaleFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		51750C6464DBE36108FFE01204CC2063 /* DJIVideoPoolMp4Muxer.h in Headers */ = {isa = PBXBuildFile; fileRef = 85BCADFE361FDA1E7D46F5A7345173A2 /* DJIVideoPoolMp4Muxer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		526B3169A907C6051DDB6D2B6CDC0088 /* DJIVTH264CompressConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = C70EA99B7F0963FEF157C0E681290CD4 /* DJIVTH264CompressConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		53422EC247BF79093130090CF395E903 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40CB39E715FBCDAA142E6513E126200A /* Foundation.framework */; };
+		5492E8304ED4E54504D7CE0102D85D09 /* DJIPixelCache.m in Sources */ = {isa = PBXBuildFile; fileRef = AAB3F9DFCE00F0EC89B2295E1EB46C32 /* DJIPixelCache.m */; };
+		550370B087FE8DB1B8B760FF099AD2C7 /* DJIPixelCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCFAE15517AD985AE9FA8FF81C2FC96 /* DJIPixelCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		55FDF921F88D40EA2245D15C0EA6ADD8 /* DJIH264FrameRawLayerDumper.h in Headers */ = {isa = PBXBuildFile; fileRef = 98B41527EBB1CCC328067ABC98733BA6 /* DJIH264FrameRawLayerDumper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		56E961CC724DCE8C8804838C889770B8 /* DJILiveViewRenderDisplayView.h in Headers */ = {isa = PBXBuildFile; fileRef = FE6E341CA0F2CF3178E1C22B5B9CE33E /* DJILiveViewRenderDisplayView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		57A84A428AC20FBAC8DE1E121DFBB0CD /* DJICameraRemotePlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = EDB9CDAB472BC54A59F213253F8C4F5D /* DJICameraRemotePlayerView.m */; };
+		5807BDABAC597879DE071D0BE8ECC87A /* DJILiveViewDammyCameraTakePhotoSession.h in Headers */ = {isa = PBXBuildFile; fileRef = F7F81B355D6A45D1A8A4CC9D063658C7 /* DJILiveViewDammyCameraTakePhotoSession.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5A4FF7F650239D2FE55A1D4357EF1CFB /* DJILiveViewRenderColorMatrixFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CF3906FA6CF18DAE2B5B19E81CA29EE /* DJILiveViewRenderColorMatrixFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5D2FFF516643BAA008C91DDA2C51B538 /* DJIVideoPresentViewAdjustHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = BFB7E755629F1512C1AA97B84F94B415 /* DJIVideoPresentViewAdjustHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6445ABA5B02FBCC699E8EACEF4450B5F /* DJILiveViewCalibrateFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = F77A623ADECDC867E7E5D2EA14F8E6C2 /* DJILiveViewCalibrateFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64BDDC07DFA692CED3B52618CC8B0978 /* djiffremux.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E2260952E395ABFA347C63CE583F892 /* djiffremux.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		661C51E6BC98353F1CD324959CA82968 /* DJIDecodeImageCalibrateDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = C97364F6337AF5794D43BC0F6F7F2AD9 /* DJIDecodeImageCalibrateDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		67B1F3B7ED1AAE92D47FE9AE191F8AF1 /* DJILiveViewRenderTexture.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B744602709D47059BA7ADE6FFDEC9D8 /* DJILiveViewRenderTexture.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		68C751775C86C150A74166137B396D61 /* DJIWidget.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DB03A4793E053F871B2BB482EA80DAD /* DJIWidget.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		68D56C9C1CBAC153C5552B6166504BCA /* DJIH264VTDecode.m in Sources */ = {isa = PBXBuildFile; fileRef = EEFFF4C889E1CE98E9140322FCF6412D /* DJIH264VTDecode.m */; };
+		69DB6D4220ABB7A069585DCADC848706 /* DJILiveViewRenderCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 42E7542911E2F56849E45B7FAF753AF6 /* DJILiveViewRenderCommon.m */; };
+		6D8F88A79AC5F04111276A73F5C2E837 /* DJILiveViewDammyCameraStructs.h in Headers */ = {isa = PBXBuildFile; fileRef = F0F293271E90AB1A430A99FD8872C52F /* DJILiveViewDammyCameraStructs.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6F0C523D95A17D8BCB52BCC1CE4052B5 /* DJILiveViewRenderHighlightShadowFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = A86C76523B807A2B906D7FB3D4086777 /* DJILiveViewRenderHighlightShadowFilter.m */; };
+		70806CB22AB50F13E4624E258A6EA61A /* DJIImageCalibrateColorGPUConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = E2DFE090258C4ECBEFBE70727A845064 /* DJIImageCalibrateColorGPUConverter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		72238204905F7B304BFC7BEA9EB6F4FB /* DJIAudioSampleBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0620FE9BA4A0955D3503604899C75A58 /* DJIAudioSampleBuffer.m */; };
+		74FC69379744542BB3AF17D75D651F3F /* DJISoftwareDecodeProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = EF09928FCE1D8C101FAF7C84548023CE /* DJISoftwareDecodeProcessor.m */; };
+		76696216C4694BFEB12C94BBC9942AE7 /* DJIMavic2ProCameraImageCalibrateFilterDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 699CE905A2F96036DA5279A238862FD0 /* DJIMavic2ProCameraImageCalibrateFilterDataSource.m */; };
+		76D9CAD998277244B9EF210777F7D0FA /* DJIWidgetLinkQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 395D6FE05A0D07559F02F31743201AC4 /* DJIWidgetLinkQueue.m */; };
+		78524B3B78745E80708A093A75199E12 /* DJIImageCache.h in Headers */ = {isa = PBXBuildFile; fileRef = C9B6CFDD0596F967278440764F9740CF /* DJIImageCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		79F0AD1461848CD9A1CBC5EC3AE5B07B /* DJIImageCalibrateHelperHolder.h in Headers */ = {isa = PBXBuildFile; fileRef = E81E9BAFD94E687E913FA0A6C9CAF05F /* DJIImageCalibrateHelperHolder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7A8590F03D11BFFA799E151199C3FBC9 /* DJIWidget-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E204F8F40F9975C5E0ADEA9F094A45CE /* DJIWidget-dummy.m */; };
+		7D103AED335B2D101CC2E8E06EB3F594 /* DJIDecodeImageCalibrateDataBuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 372A2EF21FFE76B5B478ED4E5C5C0F97 /* DJIDecodeImageCalibrateDataBuffer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		80737F2ABF3E30B0986DD1A999F40BD2 /* DJILiveViewRenderContext.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4A1ED561639C180742DB47E00AF9EA /* DJILiveViewRenderContext.m */; };
+		83C5EBEFDC932F3FB01644F5D279DD23 /* DJIWidgetMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 953EA174C45AC453DC61A299D5C28A57 /* DJIWidgetMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8763703D1209D26E44F116BB9074994E /* DJIRtmpIFrameProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 3050D8639E57005D8F1DCB309789324B /* DJIRtmpIFrameProvider.m */; };
+		886B7B2438EDD192121E8DE26710A6A4 /* DJILiveViewRenderProgram.m in Sources */ = {isa = PBXBuildFile; fileRef = F775E067FA3FBD0483302A6B463962CC /* DJILiveViewRenderProgram.m */; };
+		88C860B42ECBC56A52EEC79FA73EB584 /* DJIImageCacheQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = A3E052E9F5DD1765DB0DE6BA5F4C8B99 /* DJIImageCacheQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8912866896EB268EBE000DB05FF0EE66 /* DJIImageCalibrationFrame.h in Headers */ = {isa = PBXBuildFile; fileRef = A46E486E9642EF1E249EC524F136B690 /* DJIImageCalibrationFrame.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		89C08996AD479A23F675ECA1275300B9 /* DJIRTPlayerRenderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A4713ED36446427113D134F4C6FC48 /* DJIRTPlayerRenderView.m */; };
+		8A477B7D4B69B13F48A4FF7E2B46B9B2 /* DJILiveViewRenderLookupFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 12998DE14922BBDE61640BFBABCAFE36 /* DJILiveViewRenderLookupFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8BAB96F3B002AF5BA0B71F358F5E84DB /* DJILiveViewColorSpaceFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 69FFF126D9D60622735C05369820AC1A /* DJILiveViewColorSpaceFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F6D2612BE8AD7B8C6BFAC0D33F620C2 /* DJILiveViewFrameBuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = F01D369B6DD689D8BBB4E3E9E55F9939 /* DJILiveViewFrameBuffer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9021911EE8FF8C43D007D28411FD1490 /* DJIImageCalibrationFastFrame.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B515E433F374EAF363AA9E795C16599 /* DJIImageCalibrationFastFrame.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9061A5CB2E45A0D70EA018D4DBD46E69 /* DJIMavic2ZoomCameraImageCalibrateFilterDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 094E6A1E9D27DF9ED678EABEF157035A /* DJIMavic2ZoomCameraImageCalibrateFilterDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9080A0BB98AF7C3EF4D11CFD4F1BE9E6 /* DJICalibratePixelBufferProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 2422707809E31B5FA2E495DADA0B5507 /* DJICalibratePixelBufferProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		908AF79CBC6691226760DD050780F5C5 /* DJILB2AUDRemoveParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C5D5BB0569E7398C0CCDC45F739042B /* DJILB2AUDRemoveParser.m */; };
+		939F66C3E86D3FA4E0FDA2DD449FF3B0 /* DJIImageCalibrateFilterDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = EE763C915719B93A60C9C1D8212FC08D /* DJIImageCalibrateFilterDataSource.m */; };
+		963F1F75365EE56C59056A4CB426DC8E /* DJIAlbumTransfer.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0A7572E542D89D824D65C7CE9B6CEA /* DJIAlbumTransfer.m */; };
+		96D373E9F022E59E1FAE7FDE66B5DBAA /* DJIDecodeImageCalibrateHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = F3CBF4D5EE114D836AF46BF949C17C9A /* DJIDecodeImageCalibrateHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		98280E78D0627C191DFFDE2ADD6FD999 /* DJIVideoWriterDiskHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = BDBFCC57131B0500755F98E812C86BE1 /* DJIVideoWriterDiskHelper.m */; };
+		98F968AA8D1EE87E958A60ABA69FB6D9 /* DJILiveViewFrameBuffer_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = A278FF56FB953560515A26C840CDDCD0 /* DJILiveViewFrameBuffer_Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9A6D45DF5963CC332C25E92935EEF419 /* DJILiveViewRenderDisplayView.m in Sources */ = {isa = PBXBuildFile; fileRef = CD228B57B2A1E1ED8DF83C4CFA2067C6 /* DJILiveViewRenderDisplayView.m */; };
+		9F06297371CAF93F709A5865E864AF52 /* DJILiveViewRenderHighlightShadowFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DC54C01086FCE703CF35056B4BB8D3E /* DJILiveViewRenderHighlightShadowFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9F726AD50197335EEF559D75898F2404 /* DJILiveViewRenderHSBFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 1600F59470291C2B0B5F4037C13049EE /* DJILiveViewRenderHSBFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A0E8FAEB561F4AE81DDE50501E387B12 /* djiffremux.c in Sources */ = {isa = PBXBuildFile; fileRef = AD5DA3D382EBC16968F09188AB7F2962 /* djiffremux.c */; };
+		A13D3E4BD66DEF49755BFAB378546B2E /* DJIMovieGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 880D766987DF13D413D61DFAA78AF042 /* DJIMovieGLView.m */; };
+		A1D71EAAAEA2E2ECE6902DD387C393B9 /* DJIImageCalibrateHelper_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 666DAB509D5792F37930F35A0D491D5E /* DJIImageCalibrateHelper_Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A351B0037FAC4291F05D30D8256F84D3 /* DJILiveViewColorMonitorFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = E1D1056BB1498195B06C8B32BA1639ED /* DJILiveViewColorMonitorFilter.m */; };
+		A3B2AB2410AB6D7CE728F4C61EEC6096 /* DJIVTH264CompressSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FECA9F41F79F2BDBA23E6D726B56EC6 /* DJIVTH264CompressSession.m */; };
+		A527A5577370502E14E4A99AAF1F44B5 /* DJIDecodeFrameRateMonitor.h in Headers */ = {isa = PBXBuildFile; fileRef = EF8E478757C43DE84EB16483B0AD198B /* DJIDecodeFrameRateMonitor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A755FF5D99E42FD2EF7ABFACE0D95381 /* DJICustomVideoFrameExtractor.m in Sources */ = {isa = PBXBuildFile; fileRef = D636F551C1447D46B66F06154E15494E /* DJICustomVideoFrameExtractor.m */; };
+		A8589661952C89FF2A7DEFA2B748508D /* DJIH264FrameRawLayerDumper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F60BED877E671EC45F1AAB8633BCBDC /* DJIH264FrameRawLayerDumper.m */; };
+		A9ED640813D0EC8582D11729B93F2631 /* DJIVTH264Encoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 02B63476FD726F0BB0EA0AF8F0D765EA /* DJIVTH264Encoder.m */; };
+		AE2C1F0BB25A80E9E6855382485325A1 /* Floaty-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F019B9BBBAEEDB0CD8EA01A226AC06 /* Floaty-dummy.m */; };
+		AE3EC7929F3753BDA488672F460594F7 /* DJILiveViewRenderDataSource_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A5FB452BDB3097E2F45CCBB32644E3B /* DJILiveViewRenderDataSource_Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AF0D3741B0B65E9355CEC98622C8CF34 /* DJIVideoFrameSyncPoint.h in Headers */ = {isa = PBXBuildFile; fileRef = C48ABDB2CFBDC475C444D3A1A8DBAB73 /* DJIVideoFrameSyncPoint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B133ED6B7CE5D5CEFFB83A0D9CEB7C45 /* DJILiveViewRenderScaleFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F63EFB74E9E30FF46C649E9E58F1590 /* DJILiveViewRenderScaleFilter.m */; };
+		B1F306FD7B2EE150072B31CC16B08EDE /* DJIWidgetLinkQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 843F71CC21D34ABCA82567AD8B84ABC7 /* DJIWidgetLinkQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B227E9E9FEB36E42489740CF65FB5D77 /* DJIImageCalibrationFrameQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C0B91881B1ED683713669E6F9447DBB /* DJIImageCalibrationFrameQueue.m */; };
+		B25BA998AE24F7831A6D70989925E8AA /* DJIVideoPreviewSmoothHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = F1DBC845AE2FF386485F6B8508E75F69 /* DJIVideoPreviewSmoothHelper.m */; };
+		B2961887EF70AC2AC910E654D85E2DC1 /* DJILiveViewDammyCameraTakePhotoSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FED9231F81E73F2D38CBC736B5DE771 /* DJILiveViewDammyCameraTakePhotoSession.m */; };
+		B5294124F46A8F7A6638C67524A262BF /* DJIImageCalibrateColorCPUConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = C83A117A6C134C1C4AEA2E65464E6E4F /* DJIImageCalibrateColorCPUConverter.m */; };
+		B62E8FF9FB6C791953027AC012BE735E /* DJIAudioSampleBuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = D1E3851475AF2649FCE2EFD7AFB8AB29 /* DJIAudioSampleBuffer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B76C301B2D2C727B477D54272ACAD3DA /* DJIImageCalibrateColorCPUConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = 2429EA2BFB054AF86DEAB2CD04F34EDA /* DJIImageCalibrateColorCPUConverter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B903EA1DC54D6EB4E8045686655A72E8 /* DJILiveViewRenderHSBFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 056E396027743942DAB8EDF53FAE19C7 /* DJILiveViewRenderHSBFilter.m */; };
+		B962036025A4029517FEB9C58FE1A660 /* DJIDecodeImageCalibrateDataBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3456653B6110E065C0AD80CA573CE865 /* DJIDecodeImageCalibrateDataBuffer.m */; };
+		B97F4D5353D2F75BD64A1F6BF84BDC7D /* DJIImageCalibrationFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B10527519D37D719391F91A26C1D15 /* DJIImageCalibrationFrame.m */; };
+		BA2189B428231D54EB52C4FDB612654E /* DJIVideoPreviewer.h in Headers */ = {isa = PBXBuildFile; fileRef = FA928DEC18DAE30C97D0F3BE9FEC2CB3 /* DJIVideoPreviewer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA5187E9FA2A1FDEDB60411111722FD7 /* DJIJpegStreamImageDecoder.h in Headers */ = {isa = PBXBuildFile; fileRef = EBEEE651720EBC243363D18C199D99B1 /* DJIJpegStreamImageDecoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BAF652A234AD00EA80029FE84AB81D69 /* DJIMavic2ProCameraImageCalibrateFilterDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 6756CD4569119DE18193C67C3147D338 /* DJIMavic2ProCameraImageCalibrateFilterDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BB6515F843A8B00F7F7249836633944D /* DJIVideoWriterDiskHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E5F242F57B38DD7790BA9AC04ADCAC7 /* DJIVideoWriterDiskHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BBF849BCB277490F498F3074EA8B30BE /* DJICustomVideoFrameExtractor.h in Headers */ = {isa = PBXBuildFile; fileRef = C39A023CCD48A202C4F6910250A19754 /* DJICustomVideoFrameExtractor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BD1C0788D1327CE4055367D22B774101 /* DJIImageCalibrateFilterDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 959B4201C5E0927E3785BB2EA6CACB63 /* DJIImageCalibrateFilterDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C1AD22567C816F371D04DE5BAFBEE9E9 /* DJIWidgetAsyncCommandQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 353D38DA2B2C8DFE6EFB7A340ECB4C04 /* DJIWidgetAsyncCommandQueue.m */; };
+		C34C1B4B467E75F136ABDBDA8C93789A /* DJIVideoPreviewer.m in Sources */ = {isa = PBXBuildFile; fileRef = B3ACEA1D75701190044D3A464253DB02 /* DJIVideoPreviewer.m */; };
+		C38095C6F1CDA23B42160D4D9102F2D6 /* DJILiveViewRenderLookupFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 389EE57B2FA4D7A30264BA45F0081B36 /* DJILiveViewRenderLookupFilter.m */; };
+		C4BD1C9A56ACDABDA725A22F1E2E54C4 /* DJIVideoPoolMp4Muxer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C8F404BF5222850F89CEE24C5D72313 /* DJIVideoPoolMp4Muxer.m */; };
+		C4DC74D251F2EFA403AABDD3087F124B /* DJIH264PocQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = C3E2E3D821D769A3881451126BECE645 /* DJIH264PocQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C6325917B473D284C92ECC4A31412AD7 /* DJIVTH264Compressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A9548089B7A04F0814B71FB881D763 /* DJIVTH264Compressor.m */; };
+		C64DCC544F38B4C10709E98EE8415F0C /* DJISoftwareDecodeProcessor.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C7C24B1A26D5C9806A4180DCD1D8B35 /* DJISoftwareDecodeProcessor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C7C17524B4CDA82FC2D5BCB19DF936D4 /* DJILiveViewRenderPass.m in Sources */ = {isa = PBXBuildFile; fileRef = 345D18658F812C36EA9BD48E65317C5B /* DJILiveViewRenderPass.m */; };
+		C8EFA6BD8B744A76348E1C1DFFE283A5 /* DJICalibratePixelBufferProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A570528FE3DE183D3D3B497FABA0D77 /* DJICalibratePixelBufferProvider.m */; };
+		C9F150130BBD7962E2BA65CEC766723A /* DJIImageCalibrationFastFrame_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = FABF8FA5164A9593385F52B156C75F46 /* DJIImageCalibrationFastFrame_Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C9FDC4D664A3F7525A108865951CCACA /* DJIAlbumHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 602EA2F3A112EE0BC67BF98ABED12C1E /* DJIAlbumHandler.m */; };
+		CBAE09F1EEA692FFD0544DEB908D986A /* DJIVTH264Compressor.h in Headers */ = {isa = PBXBuildFile; fileRef = DB71C3C7AC5A8CD357C8A7A3C7026431 /* DJIVTH264Compressor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CBEFF2DBF35F4761603C8A17BD7F4AFB /* DJIImageCalibrateHelperHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = B79D0997006A06E3D3753B49B4D15807 /* DJIImageCalibrateHelperHolder.m */; };
+		CC42697DE20970EC919FC65F79033087 /* DJIAlbumTransfer.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E267E3C88D0E482974CF91CEB28ED58 /* DJIAlbumTransfer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CC7FA7718DC37B789E511BFE89E8F49B /* DJIImageCalibrationFastFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AFE5CC95EDAADD2D3EC98CF75FC938B /* DJIImageCalibrationFastFrame.m */; };
+		CF097E4E1A8616B0492BC1FD9D5DDA00 /* DJIImageCalibrateHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 61569E8AABACB1992DD4CC927B0A3F53 /* DJIImageCalibrateHelper.m */; };
+		D023AC63953263392A4659FA0A0D6B17 /* DJILiveViewCalibrateFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0D8278ED788A048C81AEDCCA7C6C3A /* DJILiveViewCalibrateFilter.m */; };
+		D04B90A3E439A9EEE3AEB70438033533 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40CB39E715FBCDAA142E6513E126200A /* Foundation.framework */; };
+		D10501B18EEC9B6D38C6613C555B4264 /* DJIImageCalibrateHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = F3A97E8EEF5117296ED37A955D2A5175 /* DJIImageCalibrateHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D28B02CE11055B04C7402466DE5A80B7 /* DJIDecodeImageCalibrateDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 36E8A82BA277C2E09E9906E4187A754B /* DJIDecodeImageCalibrateDataSource.m */; };
+		D2A2A5AC971FFE5D878C0EBD6F2CBFC8 /* DJILiveViewColorSpaceFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 36DB9D5D26FB387582FA10B2E883EA80 /* DJILiveViewColorSpaceFilter.m */; };
+		D33303A15C4436F9DFA19028E3BCE072 /* DJIStreamCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 3498298ACF2C6036332462E44B9D7107 /* DJIStreamCommon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D41E3F787CAB9E4C44439D097FD51DDC /* DJIVTH264CompressConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B8707B902452CA2B8A75249E7258FA /* DJIVTH264CompressConfiguration.m */; };
+		D6C2947316DEC6E07F370F731C9753B9 /* Pods-Dronorama-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FE2D46E86850EBB5CD8B384175F3A82 /* Pods-Dronorama-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DA0B0D06C0BD27DAA5C47CE9D8CBF7F2 /* DJIVideoWriterContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D51AB4A61D77033E2CD458C317E2B1D /* DJIVideoWriterContext.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DA788380AA789A8C87BD09A08E4E0858 /* DJIVideoPreviewerH264Parser.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A0A66F73D48A122373073E1487E532 /* DJIVideoPreviewerH264Parser.m */; };
+		DADF9C7EFDD2B6F81DEB678F1A09E17A /* DJIVideoHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = BA5A2C3E8BD90EDE257B870A4883E50F /* DJIVideoHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DBC0C81DC0661544C0CE7203F272221E /* DJICameraRemotePlayerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A96E3F5F64BFA0ADD22A219B2933628 /* DJICameraRemotePlayerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DC9914B24E09B8DA7BFADFB3A9793F36 /* DJILiveViewRenderFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 86828B3A62BF51B5BA6D6FE4436C5E7A /* DJILiveViewRenderFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DD6D9F9D3F749AC738D6B98C4775A0FA /* DJIReverseDLogFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 5ACBA83ACAFB5942EC8A3195E861A084 /* DJIReverseDLogFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DE3A9A4C7A5834F5FEDF020F375B3001 /* DJILiveViewRenderContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CE2DF751D0D5DF67C8D73FA22411B7E /* DJILiveViewRenderContext.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DE6ECB96E25D06CAEA1D5F9121C3BD83 /* DJILiveViewFrameBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = E013C52081BC4F8AF0EFB95DB169BDA7 /* DJILiveViewFrameBuffer.m */; };
+		E010D6E693B168D65C0930081176CB33 /* DJILB2AUDRemoveParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A2CF9BF8A9BC268AB5416CC2D921172 /* DJILB2AUDRemoveParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E101C62F7F458646AD2D963DAE379F19 /* DJISymbols.h in Headers */ = {isa = PBXBuildFile; fileRef = 95BF5A52062D431802D95CFDED80B919 /* DJISymbols.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E37D7977B7D62876208466C8CE056DF5 /* Pods-Dronorama-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 492385E29550D58181F298DA0826B409 /* Pods-Dronorama-dummy.m */; };
+		E77D764605B0CE1AD9453A61A9BEC882 /* DJIWidgetAsyncCommandQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A0DC6B5079B797B59B16AB61C1899CE /* DJIWidgetAsyncCommandQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EA23888361483F20F3CFF4E9EB55F876 /* DJIDecodeImageCalibrateHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E5F46ED11C0FE88BCE2E37FFA720C149 /* DJIDecodeImageCalibrateHelper.m */; };
+		EAE2CC3636B12CF3CBA94BB309C8EDC6 /* DJILiveViewDammyCameraSessionProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = B3E4B6FC259E52A909144D1DEA864106 /* DJILiveViewDammyCameraSessionProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ED24790407BED2EBB6AD3ED60CA64642 /* NSError+DJIVTH264CompressSession.h in Headers */ = {isa = PBXBuildFile; fileRef = D2FDEC000FF25A04ECEE53563B3224FD /* NSError+DJIVTH264CompressSession.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EF220058414156E80B32AC1F9860C450 /* DJIVideoPresentViewAdjustHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5249DEB89A6F65FA4E30269CC8FC81 /* DJIVideoPresentViewAdjustHelper.m */; };
+		F03494F241B81683D781C4037E5F7000 /* DJIVideoPreviewSmoothHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AA1339775D1AB759266DC769586BD46 /* DJIVideoPreviewSmoothHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F505442D01EBC8A659CFC7220D362C59 /* DJIStreamCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = BF544E1CC9E81AB13FB6EE439F3F2607 /* DJIStreamCommon.m */; };
+		F6879EA069405582C22DD733B689D78D /* DJILiveViewRenderFocusWarningFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 46443794C5097C556DB67104D89D8EE7 /* DJILiveViewRenderFocusWarningFilter.m */; };
+		F73AE7DC7485FABF99E576CD56253CDC /* DJIAlbumHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = C843CA1D041BB9A495B0828AC484082D /* DJIAlbumHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FC341E32447A72BA4B09D1D8FF784BFA /* DJIImageCalibrateColorGPUConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 461B4256E4C3AECB3D4878BB2CBAD68E /* DJIImageCalibrateColorGPUConverter.m */; };
+		FCC03A9EE4332EFCE94F6086152C6F97 /* DJISmoothDecode.h in Headers */ = {isa = PBXBuildFile; fileRef = F9D337CFED9263917F9415BD7FE48B24 /* DJISmoothDecode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FCE593C143AF9730C8646210F23A60EF /* DJILiveViewRenderFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 378506BBB82DF6012EAE3F0DDEE81F23 /* DJILiveViewRenderFilter.m */; };
+		FECE5BFA4195537CCEAD32901B42CFC4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECF2A2B0720AE923C22BED3192888BE0 /* UIKit.framework */; };
+		FF820A8DC0ED1E0A040E6CD25E4A6061 /* DJILiveViewRenderPicutre.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F4332A78BD715112A7D4F5C83B122A /* DJILiveViewRenderPicutre.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4917D98FB7CFFB168361F91AF0C09FB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8CFF7D709CC2B880BE7BC2613974B4D2;
+			remoteInfo = Floaty;
+		};
+		9BF965ABACCA4D458E9A4E50333B7630 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13474EC7ADCE7604DB465F44697389B7;
+			remoteInfo = DJIWidget;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02B63476FD726F0BB0EA0AF8F0D765EA /* DJIVTH264Encoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DJIVTH264Encoder.m; path = DJIWidget/VideoService/VTH264Encoder/DJIVTH264Encoder.m; sourceTree = "<group>"; };
+		02F4332A78BD715112A7D4F5C83B122A /* DJILiveViewRenderPicutre.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DJILiveViewRenderPicutre.m; path = DJIWidget/VideoPreviewer/Render/Texture/DJILiveViewRenderPicutre.m; sourceTree = "<group>"; };
+		040B40CB3ADF2243EE61CF9312049AAC /* Floaty.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Floaty.xcconfig; sourceTree = "<group>"; };
+		0475A3D8815214659F53A4A26E028681 /* DJIVTH264CompressSession.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DJIVTH264CompressSession.h; path = DJIWidget/VideoService/VTH264Encoder/DJIVTH264CompressSession.h; sourceTree = "<group>"; };
+		04A0A66F73D48A122373073E1487E532 /* DJIVideoPreviewerH264Parser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DJIVideoPreviewerH264Parser.m; path = DJIWidget/VideoPreviewer/H264Parser/DJIVideoPreviewerH264Parser.m; sourceTree = "<group>"; };
+		056E396027743942DAB8EDF53FAE19C7 /* DJILiveViewRenderHSBFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DJILiveViewRenderHSBFilter.m; path = DJIWidget/VideoPreviewer/Render/HSBFilter/DJILiveViewRenderHSBFilter.m; sourceTree = "<group>"; };
+		0620FE9BA4A0955D3503604899C75A58 /* DJIAudioSampleBuffer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DJIAudioSampleBuffer.m; path = DJIWidget/RTMPProcessor/DJIAudioSampleBuffer.m; sourceTree = "<group>"; };
+		094E6A1E9D27DF9ED678EABEF157035A /* DJIMavic2ZoomCameraImageCalibrateFilterDataSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DJIMavic2ZoomCameraImageCalibrateFilterDataSource.h; path = DJIWidget/VideoPreviewer/Helper/ImageCalibrate/DJIMavic2ZoomCameraImageCalibrateFilterDataSource.h; sourceTree = "<group>"; };
+		0C8F404BF5222850F89CEE24C5D72313 /* DJIVideoPoolMp4Muxer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DJIVideoPoolMp4Muxer.m; path = DJIWidget/VideoLiveCamera/RecordVideo/VideoWriter/Context/Muxer/DJIVideoPoolMp4Muxer.m; sourceTree = "<group>"; };
+		0E2BD44A3D08DDBB55BCD9637F09C5D5 /* DJILiveViewRenderDataSource.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DJILiveViewRenderDataSource.m; path = DJIWidget/VideoPreviewer/Render/Upload/DJILiveViewRenderDataSource.m; sourceTree = "<group>"; };
+		0FE2D46E86850EBB5CD8B384175F3A82 /* Pods-Dronorama-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Dronorama-umbrella.h"; sourceTree = "<group>"; };
+		103DFDABD709C5C2D453CFC9127018DD /* DJIWidget.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DJIWidget.framework; path = DJIWidget.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		12998DE14922BBDE61640BFBABCAFE36 /* DJILiveViewRenderLookupFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DJILiveViewRenderLookupFilter.h; path = DJIWidget/VideoPreviewer/Render/LookupFilter/DJILiveViewRenderLookupFilter.h; sourceTree = "<group>"; };
+		12C5BA50FAE9F6D2D72D45AF35EA13A9 /* DJILiveViewRenderFocusWarningFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DJILiveViewRenderFocusWarningFilter.h; path = DJIWidget/VideoPreviewer/Render/SobelFilter/DJILiveViewRenderFocusWarningFilter.h; sourceTree = "<group>"; };
+		14AFEE2E8CC98D31445FFA56D4364591 /* Pods-Dronorama-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Dronorama-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1600F59470291C2B0B5F4037C13049EE /* DJILiveViewRenderHSBFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DJILiveViewRenderHSBFilter.h; path = DJIWidget/VideoPreviewer/Render/HSBFilter/DJILiveViewRenderHSBFilter.h; sourceTree = "<group>"; };
+		17A4E75E521CCBB4EC4E3F1E388BAA75 /* Floaty-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Floaty-prefix.pch"; sourceTree = "<group>"; };
+		1A2CF9BF8A9BC268AB5416CC2D921172 /* DJILB2AUDRemoveParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DJILB2AUDRemoveParser.h; path = DJIWidget/VideoPreviewer/Lb2AUD/DJILB2AUDRemoveParser.h; sourceTree = "<group>"; };
+		1A96E3F5F64BFA0ADD22A219B2933628 /* DJICameraRemotePlayerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DJICameraRemotePlayerView.h; path = DJIWidget/VideoService/H1Camera/DJICameraRemotePlayerView.h; sourceTree = "<group>"; };
+		1B515E433F374EAF363AA9E795C16599 /* DJIImageCalibrationFastFrame.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DJIImageCalibrationFastFrame.h; path = DJIWidget/VideoPreviewer/Helper/DJIImageCalibrationFrame/DJIImageCalibrationFastFrame.h; sourceTree = "<group>"; };
+		1C90000A591BCBA199AA2038E3528A6F /* DJIVideoPoolStructs.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DJIVideoPoolStructs.h; path = DJIWidget/VideoPreviewer/DJIVideoPoolStructs.h; sourceTree = "<group>"; };
+		1CD9F476124FCA1E3C93A1EDF050D0AE /* DJIVideoFeedCachingSession.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DJIVideoFeedCachingSession.h; path = DJIWidget/VideoLiveCamera/RecordVideo/DJIVideoFeedCachingSession.h; sourceTree = "<group>"; };
+		1E267E3C88D0E482974CF91CEB28ED58 /* DJIAlbumTransfer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DJIAlbumTransfer.h; path = DJIWidget/VideoPreviewer/DJIAlbumTransfer.h; sourceTree = "<group>"; };
+		21A4713ED36446427113D134F4C6FC48 /* DJIRTPlayerRenderView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DJIRTPlayerRenderView.m; path = DJIWidget/VideoService/H1Camera/DJIRTPlayerRenderView.m; sourceTree = "<group>"; };
+		2422707809E31B5FA2E495DADA0B5507 /* DJICalibratePixelBufferProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DJICalibratePixelBufferProvider.h; path = DJIWidget/VideoPreviewer/Helper/ImageCalibrate/PixelBufferProvider/DJICalibratePixelBufferProvider.h; sourceTree = "<group>"; };
+		2429EA2BFB054AF86DEAB2CD04F34EDA /* DJIImageCalibrateColorCPUConverter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DJIImageCalibrateColorCPUConverter.h; path = DJIWidget/VideoPreviewer/Helper/ImageCalibrate/DJIImageCalibrateColorCPUConverter.h; sourceTree = "<group>"; };
+		24390EFD555DD124430DFF9724065945 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		2539F3E004F8530D7BB9B2B88F9CACEC /* DJILiveViewRenderDataSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DJILiveViewRenderDataSource.h; path = DJIWidget/VideoPreviewer/Render/Upload/DJILiveViewRenderDataSource.h; sourceTree = "<group>"; };
+		27B8707B902452CA2B8A75249E7258FA /* DJIVTH264CompressConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DJIVTH264CompressConfiguration.m; path = DJIWidget/VideoService/VTH264Encoder/DJIVTH264CompressConfiguration.m; sourceTree = "<group>"; };
+		297D918407D6A24C328A6123A8366AB2 /* DJIVideoWriter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DJIVideoWriter.h; path = DJIWidget/VideoLiveCamera/RecordVideo/VideoWriter/DJIVideoWriter.h; sourceTree = "<group>"; };
+		2CB79595951EA9FFDF19B7A5E526BDA5 /* DJIUXSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DJIUXSDK.framework; path = iOS_UXSDK/DJIUXSDK.framework; sourceTree = "<group>"; };
+		2D51AB4A61D77033E2CD458C317E2B1D /* DJIVideoWriterContext.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DJIVideoWriterContext.h; path = DJIWidget/VideoLiveCamera/RecordVideo/VideoWriter/Context/DJIVideoWriterContext.h; sourceTree = "<group>"; };
+		2F200F8CEEED6EA6868786315C7AD105 /* DJILiveViewRenderScaleFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DJILiveViewRenderScaleFilter.h; path = DJIWidget/VideoPreviewer/Render/ScaleFilter/DJILiveViewRenderScaleFilter.h; sourceTree = "<group>"; };
+		2FCFAE15517AD985AE9FA8FF81C2FC96 /* DJIPixelCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DJIPixelCache.h; path = DJIWidget/VideoPreviewer/Helper/DJIImageCache/DJIPixelCache.h; sourceTree = "<group>"; };
+		3050D8639E57005D8F1DCB309789324B /* DJIRtmpIFrameProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DJIRtmpIFrameProvider.m; path = DJIWidget/RTMPProcessor/DJIRtmpIFrameProvider.m; sourceTree = "<group>"; };
+		31D8891ECCF8FD73090BF2D37BBF3BCC /* DJISDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DJISDK.framework; path = iOS_Mobile_SDK/DJISDK.framework; sourceTree = "<group>"; };
+		32C689CFC905C08E5F8A1ACB179394CF /* Floaty.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Floaty.framework; path = Floaty.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3456653B6110E065C0AD80CA573CE865 /* DJIDecodeImageCalibrateDataBuffer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DJIDecodeImageCalibrateDataBuffer.m; path = DJIWidget/VideoPreviewer/Helper/ImageCalibrate/DJIDecodeImageCalibrateDataBuffer.m; sourceTree = "<group>"; };
+		345D18658F812C36EA9BD48E65317C5B /* DJILiveViewRenderPass.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DJILiveViewRenderPass.m; path = DJIWidget/VideoPreviewer/Render/Base/DJILiveViewRenderPass.m; sourceTree = "<group>"; };
+		3498298ACF2C6036332462E44B9D7107 /* DJIStreamCommon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DJIStreamCommon.h; path = DJIWidget/VideoPreviewer/DJIStreamCommon.h; sourceTree = "<group>"; };
+		353D38DA2B2C8DFE6EFB7A340ECB4C04 /* DJIWidgetAsyncCommandQueue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DJIWidgetAsyncCommandQueue.m; path = DJIWidget/VideoService/DJIWidgetAsyncCommandQueue.m; sourceTree = "<group>"; };
+		3685847C6F907ABCAAA2D1F6872F0A6B /* DJIH264VTDecode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DJIH264VTDecode.h; path = DJIWidget/VideoPreviewer/DJIH264VTDecode.h; sourceTree = "<group>"; };
+		36DB9D5D26FB387582FA10B2E883EA80 /* DJILiveViewColorSpaceFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DJILiveViewColorSpaceFilter.m; path = DJIWidget/VideoPreviewer/Render/ColorSpaceFilter/DJILiveViewColorSpaceFilter.m; sourceTree = "<group>"; };
+		36E8A82BA277C2E09E9906E4187A754B /* DJIDecodeImageCalibrateDataSource.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DJIDecodeImageCalibrateDataSource.m; path = DJIWidget/VideoPreviewer/Helper/ImageCalibrate/DJIDecodeImageCalibrateDataSource.m; sourceTree = "<group>"; };
+		372A2EF21FFE76B5B478ED4E5C5C0F97 /* DJIDecodeImageCalibrateDataBuffer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DJIDecodeImageCalibrateDataBuffer.h; path = DJIWidget/VideoPreviewer/Helper/ImageCalibrate/DJIDecodeImageCalibrateDataBuffer.h; sourceTree = "<group>"; };
+		378506BBB82DF6012EAE3F0DDEE81F23 /* DJILiveViewRenderFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DJILiveViewRenderFilter.m; path = DJIWidget/VideoPreviewer/Render/Base/DJILiveViewRenderFilter.m; sourceTree = "<group>"; };
+		37FE9247CD5834A637B184A5E5A58A07 /* DJIVideoPreviewerH264Parser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DJIVideoPreviewerH264Parser.h; path = DJIWidget/VideoPreviewer/H264Parser/DJIVideoPreviewerH264Parser.h; sourceTree = "<group>"; };
+		389EE57B2FA4D7A30264BA45F0081B36 /* DJILiveViewRenderLookupFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DJILiveViewRenderLookupFilter.m; path = DJIWidget/VideoPreviewer/Render/LookupFilter/DJILiveViewRenderLookupFilter.m; sourceTree = "<group>"; };
+		39076C20FF5CA563649C414EE23B55C4 /* Floaty.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Floaty.modulemap; sourceTree = "<group>"; };
+		395D6FE05A0D07559F02F31743201AC4 /* DJIWidgetLinkQueue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DJIWidgetLinkQueue.m; path = DJIWidget/VideoService/DJIWidgetLinkQueue.m; sourceTree = "<group>"; };
+		3A5249DEB89A6F65FA4E30269CC8FC81 /* DJIVideoPresentViewAdjustHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DJIVideoPresentViewAdjustHelper.m; path = DJIWidget/VideoPreviewer/Helper/DJIVideoPresentViewAdjustHelper.m; sourceTree = "<group>"; };
+		3A5FB452BDB3097E2F45CCBB32644E3B /* DJILiveViewRenderDataSource_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DJILiveViewRenderDataSource_Private.h; path = DJIWidget/VideoPreviewer/Render/Upload/DJILiveViewRenderDataSource_Private.h; sourceTree = "<group>"; };
+		3FECA9F41F79F2BDBA23E6D726B56EC6 /* DJIVTH264CompressSession.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DJIVTH264CompressSession.m; path = DJIWidget/VideoService/VTH264Encoder/DJIVTH264CompressSession.m; sourceTree = "<group>"; };
+		40CB39E715FBCDAA142E6513E126200A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		41180D5BEEAAEE51E1838D8DBE846155 /* FloatyItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FloatyItem.swift; path = Sources/FloatyItem.swift; sourceTree = "<group>"; };
+		42E7542911E2F56849E45B7FAF753AF6 /* DJILiveViewRenderCommon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DJILiveViewRenderCommon.m; path = DJIWidget/VideoPreviewer/Render/Base/DJILiveViewRenderCommon.m; sourceTree = "<group>"; };
+		45A9548089B7A04F0814B71FB881D763 /* DJIVTH264Compressor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DJIVTH264Compressor.m; path = DJIWidget/VideoService/VTH264Encoder/DJIVTH264Compressor.m; sourceTree = "<group>"; };
+		461B4256E4C3AECB3D4878BB2CBAD68E /* DJIImageCalibrateColorGPUConverter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DJIImageCalibrateColorGPUConverter.m; path = DJIWidget/VideoPreviewer/Helper/ImageCalibrate/DJIImageCalibrateColorGPUConverter.m; sourceTree = "<group>"; };
+		46443794C5097C556DB67104D89D8EE7 /* DJILiveViewRenderFocusWarningFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DJILiveViewRenderFocusWarningFilter.m; path = DJIWidget/VideoPreviewer/Render/SobelFilter/DJILiveViewRenderFocusWarningFilter.m; sourceTree = "<group>"; };
+		48E4512FCBB85A92B5ADA1DB7182C0E5 /* DJIImageCalibrateColorConverter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DJIImageCalibrateColorConverter.m; path = DJIWidget/VideoPreviewer/Helper/ImageCalibrate/DJIImageCalibrateColorConverter.m; sourceTree = "<group>"; };
+		492385E29550D58181F298DA0826B409 /* Pods-Dronorama-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Dronorama-dummy.m"; sourceTree = "<group>"; };
+		4A570528FE3DE183D3D3B497FABA0D77 /* DJICalibratePixelBufferProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DJICalibratePixelBufferProvider.m; path = DJIWidget/VideoPreviewer/Helper/ImageCalibrate/PixelBufferProvider/DJICalibratePixelBufferProvider.m; sourceTree = "<group>"; };
+		4C0B91881B1ED683713669E6F9447DBB /* DJIImageCalibrationFrameQueue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DJIImageCalibrationFrameQueue.m; path = DJIWidget/VideoPreviewer/Helper/DJIImageCalibrationFrame/DJIImageCalibrationFrameQueue.m; sourceTree = "<group>"; };
+		4C7C24B1A26D5C9806A4180DCD1D8B35 /* DJISoftwareDecodeProcessor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DJISoftwareDecodeProcessor.h; path = DJIWidget/VideoPreviewer/DJISoftwareDecodeProcessor.h; sourceTree = "<group>"; };
+		4DBABDC33C2C271AE811BBE653492C15 /* DJIWidget.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DJIWidget.modulemap; sourceTree = "<group>"; };
+		4E2260952E395ABFA347C63CE583F892 /* djiffremux.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = djiffremux.h; path = DJIWidget/VideoLiveCamera/RecordVideo/VideoWriter/Context/Muxer/djiffremux.h; sourceTree = "<group>"; };
+		550DFA63ABB61160BECD44FC3A98AC63 /* DJILiveViewRenderPass.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DJILiveViewRenderPass.h; path = DJIWidget/VideoPreviewer/Render/Base/DJILiveViewRenderPass.h; sourceTree = "<group>"; };
+		5AA1339775D1AB759266DC769586BD46 /* DJIVideoPreviewSmoothHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DJIVideoPreviewSmoothHelper.h; path = DJIWidget/RTMPProcessor/DJIVideoPreviewSmoothHelper.h; sourceTree = "<group>"; };
+		5ACBA83ACAFB5942EC8A3195E861A084 /* DJIReverseDLogFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DJIReverseDLogFilter.h; path = DJIWidget/VideoPreviewer/Render/ReversDLogLookup/DJIReverseDLogFilter.h; sourceTree = "<group>"; };
+		5BEF0C9D2E9455F9964784D7A8F04994 /* FloatyDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FloatyDelegate.swift; path = Sources/FloatyDelegate.swift; sourceTree = "<group>"; };
+		5FED9231F81E73F2D38CBC736B5DE771 /* DJILiveViewDammyCameraTakePhotoSession.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DJILiveViewDammyCameraTakePhotoSession.m; path = DJIWidget/VideoLiveCamera/ShootPhoto/DJILiveViewDammyCameraTakePhotoSession.m; sourceTree = "<group>"; };
+		602EA2F3A112EE0BC67BF98ABED12C1E /* DJIAlbumHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DJIAlbumHandler.m; path = DJIWidget/VideoLiveCamera/ShootPhoto/DJIAlbumHandler.m; sourceTree = "<group>"; };
+		614C3A7C4ADA50CB49FFD0B7FD39F57D /* Pods-Dronorama-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Dronorama-acknowledgements.plist"; sourceTree = "<group>"; };
+		61569E8AABACB1992DD4CC927B0A3F53 /* DJIImageCalibrateHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DJIImageCalibrateHelper.m; path = DJIWidget/VideoPreviewer/Helper/DJIImageCalibrateHelper.m; sourceTree = "<group>"; };
+		666DAB509D5792F37930F35A0D491D5E /* DJIImageCalibrateHelper_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DJIImageCalibrateHelper_Private.h; path = DJIWidget/VideoPreviewer/Helper/DJIImageCalibrateHelper_Private.h; sourceTree = "<group>"; };
+		6756CD4569119DE18193C67C3147D338 /* DJIMavic2ProCameraImageCalibrateFilterDataSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DJIMavic2ProCameraImageCalibrateFilterDataSource.h; path = DJIWidget/VideoPreviewer/Helper/ImageCalibrate/DJIMavic2ProCameraImageCalibrateFilterDataSource.h; sourceTree = "<group>"; };
+		687206A2B151F86BB9147D357B729FCF /* DJILiveViewRenderCommon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DJILiveViewRenderCommon.h; path = DJIWidget/VideoPreviewer/Render/Base/DJILiveViewRenderCommon.h; sourceTree = "<group>"; };
+		697E0FCAA5D82F2E3B0FA4D189379B8D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		699CE905A2F96036DA5279A238862FD0 /* DJIMavic2ProCameraImageCalibrateFilterDataSource.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DJIMavic2ProCameraImageCalibrateFilterDataSource.m; path = DJIWidget/VideoPreviewer/Helper/ImageCalibrate/DJIMavic2ProCameraImageCalibrateFilterDataSource.m; sourceTree = "<group>"; };
+		69FFF126D9D60622735C05369820AC1A /* DJILiveViewColorSpaceFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DJILiveViewColorSpaceFilter.h; path = DJIWidget/VideoPreviewer/Render/ColorSpaceFilter/DJILiveViewColorSpaceFilter.h; sourceTree = "<group>"; };
+		6B8CE05F583663EC2142AB7FB6C7391C /* DJIVideoWriter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DJIVideoWriter.m; path = DJIWidget/VideoLiveCamera/RecordVideo/VideoWriter/DJIVideoWriter.m; sourceTree = "<group>"; };
+		70A4CAF6DD18125049BE74D8CEE0BFD3 /* DJIRTPlayerRenderView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DJIRTPlayerRenderView.h; path = DJIWidget/VideoService/H1Camera/DJIRTPlayerRenderView.h; sourceTree = "<group>"; };
+		738A444404ED9DF0556DB2F2FBD58B0F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		775D32C109BA1AB640AC2A83F0E28268 /* FloatyWindow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FloatyWindow.swift; path = Sources/FloatyWindow.swift; sourceTree = "<group>"; };
+		78153FF977A3BEF8341DB957A42BB7B7 /* NSError+DJIVTH264CompressSession.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSError+DJIVTH264CompressSession.m"; path = "DJIWidget/VideoService/VTH264Encoder/NSError+DJIVTH264CompressSession.m"; sourceTree = "<group>"; };
+		7A0DC6B5079B797B59B16AB61C1899CE /* DJIWidgetAsyncCommandQueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DJIWidgetAsyncCommandQueue.h; path = DJIWidget/VideoService/DJIWidgetAsyncCommandQueue.h; sourceTree = "<group>"; };
+		7C27B965649AAD5093E8836B8CF59AEB /* Pods-Dronorama-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Dronorama-frameworks.sh"; sourceTree = "<group>"; };
+		7C5D5BB0569E7398C0CCDC45F739042B /* DJILB2AUDRemoveParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DJILB2AUDRemoveParser.m; path = DJIWidget/VideoPreviewer/Lb2AUD/DJILB2AUDRemoveParser.m; sourceTree = "<group>"; };
+		7D25CD607A9B0EE227212C543A9242C0 /* Pods_Dronorama.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Dronorama.framework; path = "Pods-Dronorama.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F1557340DA422253A042F7AA72AAA0D /* DJIWidget-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DJIWidget-umbrella.h"; sourceTree = "<group>"; };
+		7FD53DB9E6B5FA30CF1629606465C702 /* DJIRtmpIFrameProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DJIRtmpIFrameProvider.h; path = DJIWidget/RTMPProcessor/DJIRtmpIFrameProvider.h; sourceTree = "<group>"; };
+		81AC6010B98340862348F952D07223B6 /* DJIVideoHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DJIVideoHelper.m; path = DJIWidget/VideoPreviewer/DJIVideoHelper.m; sourceTree = "<group>"; };
+		81B5DAEDF604C91B4F40BBE2D4F899FB /* Floaty.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Floaty.swift; path = Sources/Floaty.swift; sourceTree = "<group>"; };
+		8346BF8FC23339EEE2DBC016D0A4A580 /* DJILiveViewColorMonitorFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DJILiveViewColorMonitorFilter.h; path = DJIWidget/VideoPreviewer/Render/ColorMonitor/DJILiveViewColorMonitorFilter.h; sourceTree = "<group>"; };
+		843F71CC21D34ABCA82567AD8B84ABC7 /* DJIWidgetLinkQueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DJIWidgetLinkQueue.h; path = DJIWidget/VideoService/DJIWidgetLinkQueue.h; sourceTree = "<group>"; };
+		84B10527519D37D719391F91A26C1D15 /* DJIImageCalibrationFrame.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DJIImageCalibrationFrame.m; path = DJIWidget/VideoPreviewer/Helper/DJIImageCalibrationFrame/DJIImageCalibrationFrame.m; sourceTree = "<group>"; };
+		85BCADFE361FDA1E7D46F5A7345173A2 /* DJIVideoPoolMp4Muxer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DJIVideoPoolMp4Muxer.h; path = DJIWidget/VideoLiveCamera/RecordVideo/VideoWriter/Context/Muxer/DJIVideoPoolMp4Muxer.h; sourceTree = "<group>"; };
+		86828B3A62BF51B5BA6D6FE4436C5E7A /* DJILiveViewRenderFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DJILiveViewRenderFilter.h; path = DJIWidget/VideoPreviewer/Render/Base/DJILiveViewRenderFilter.h; sourceTree = "<group>"; };
+		880D766987DF13D413D61DFAA78AF042 /* DJIMovieGLView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DJIMovieGLView.m; path = DJIWidget/VideoPreviewer/DJIMovieGLView.m; sourceTree = "<group>"; };
+		8944DBBF1240401F80D465C8BF070564 /* DJIMavic2ZoomCameraImageCalibrateFilterDataSource.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DJIMavic2ZoomCameraImageCalibrateFilterDataSource.m; path = DJIWidget/VideoPreviewer/Helper/ImageCalibrate/DJIMavic2ZoomCameraImageCalibrateFilterDataSource.m; sourceTree = "<group>"; };
+		8AFE5CC95EDAADD2D3EC98CF75FC938B /* DJIImageCalibrationFastFrame.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DJIImageCalibrationFastFrame.m; path = DJIWidget/VideoPreviewer/Helper/DJIImageCalibrationFrame/DJIImageCalibrationFastFrame.m; sourceTree = "<group>"; };
+		8CE2DF751D0D5DF67C8D73FA22411B7E /* DJILiveViewRenderContext.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DJILiveViewRenderContext.h; path = DJIWidget/VideoPreviewer/Render/Base/DJILiveViewRenderContext.h; sourceTree = "<group>"; };
+		8DB03A4793E053F871B2BB482EA80DAD /* DJIWidget.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DJIWidget.h; path = DJIWidget/DJIWidget.h; sourceTree = "<group>"; };
+		8DC54C01086FCE703CF35056B4BB8D3E /* DJILiveViewRenderHighlightShadowFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DJILiveViewRenderHighlightShadowFilter.h; path = DJIWidget/VideoPreviewer/Render/HighLightShadowFilter/DJILiveViewRenderHighlightShadowFilter.h; sourceTree = "<group>"; };
+		8F63EFB74E9E30FF46C649E9E58F1590 /* DJILiveViewRenderScaleFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DJILiveViewRenderScaleFilter.m; path = DJIWidget/VideoPreviewer/Render/ScaleFilter/DJILiveViewRenderScaleFilter.m; sourceTree = "<group>"; };
+		90F1081258C4AE88C9D3DAA4285A3A28 /* DJIRtmpMuxer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DJIRtmpMuxer.h; path = DJIWidget/RTMPProcessor/DJIRtmpMuxer.h; sourceTree = "<group>"; };
+		953EA174C45AC453DC61A299D5C28A57 /* DJIWidgetMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DJIWidgetMacros.h; path = DJIWidget/VideoService/DJIWidgetMacros.h; sourceTree = "<group>"; };
+		959B4201C5E0927E3785BB2EA6CACB63 /* DJIImageCalibrateFilterDataSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DJIImageCalibrateFilterDataSource.h; path = DJIWidget/VideoPreviewer/Helper/ImageCalibrate/DJIImageCalibrateFilterDataSource.h; sourceTree = "<group>"; };
+		95BF5A52062D431802D95CFDED80B919 /* DJISymbols.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DJISymbols.h; path = DJIWidget/DJISymbols.h; sourceTree = "<group>"; };
+		95F019B9BBBAEEDB0CD8EA01A226AC06 /* Floaty-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Floaty-dummy.m"; sourceTree = "<group>"; };
+		971E71823EF446EA9C6958155F20A2C0 /* DJIImageCalibrateColorConverter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DJIImageCalibrateColorConverter.h; path = DJIWidget/VideoPreviewer/Helper/ImageCalibrate/DJIImageCalibrateColorConverter.h; sourceTree = "<group>"; };
+		9823807AB148A75347280533BBA0ED57 /* DJIVTH264DecoderIFrameData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DJIVTH264DecoderIFrameData.h; path = DJIWidget/VideoService/DJIVTH264DecoderIFrameData.h; sourceTree = "<group>"; };
+		98B41527EBB1CCC328067ABC98733BA6 /* DJIH264FrameRawLayerDumper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DJIH264FrameRawLayerDumper.h; path = DJIWidget/VideoPreviewer/Helper/DJIH264FrameRawLayerDumper.h; sourceTree = "<group>"; };
+		9B744602709D47059BA7ADE6FFDEC9D8 /* DJILiveViewRenderTexture.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DJILiveViewRenderTexture.h; path = DJIWidget/VideoPreviewer/Render/Texture/DJILiveViewRenderTexture.h; sourceTree = "<group>"; };
+		9C4F5BC29BC81971E350686A7A56ECBA /* DJIImageCalibrationFrameQueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DJIImageCalibrationFrameQueue.h; path = DJIWidget/VideoPreviewer/Helper/DJIImageCalibrationFrame/DJIImageCalibrationFrameQueue.h; sourceTree = "<group>"; };
+		9CF3906FA6CF18DAE2B5B19E81CA29EE /* DJILiveViewRenderColorMatrixFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DJILiveViewRenderColorMatrixFilter.h; path = DJIWidget/VideoPreviewer/Render/ColorMatrixFilter/DJILiveViewRenderColorMatrixFilter.h; sourceTree = "<group>"; };
+		9E5F242F57B38DD7790BA9AC04ADCAC7 /* DJIVideoWriterDiskHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DJIVideoWriterDiskHelper.h; path = DJIWidget/VideoLiveCamera/RecordVideo/VideoWriter/DJIVideoWriterDiskHelper.h; sourceTree = "<group>"; };
+		9F60BED877E671EC45F1AAB8633BCBDC /* DJIH264FrameRawLayerDumper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DJIH264FrameRawLayerDumper.m; path = DJIWidget/VideoPreviewer/Helper/DJIH264FrameRawLayerDumper.m; sourceTree = "<group>"; };
+		A13138FB95A05009A4659B477F14087A /* Pods-Dronorama.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Dronorama.debug.xcconfig"; sourceTree = "<group>"; };
+		A278FF56FB953560515A26C840CDDCD0 /* DJILiveViewFrameBuffer_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DJILiveViewFrameBuffer_Private.h; path = DJIWidget/VideoPreviewer/Render/Base/DJILiveViewFrameBuffer_Private.h; sourceTree = "<group>"; };
+		A3E052E9F5DD1765DB0DE6BA5F4C8B99 /* DJIImageCacheQueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DJIImageCacheQueue.h; path = DJIWidget/VideoPreviewer/Helper/DJIImageCache/DJIImageCacheQueue.h; sourceTree = "<group>"; };
+		A46E486E9642EF1E249EC524F136B690 /* DJIImageCalibrationFrame.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DJIImageCalibrationFrame.h; path = DJIWidget/VideoPreviewer/Helper/DJIImageCalibrationFrame/DJIImageCalibrationFrame.h; sourceTree = "<group>"; };
+		A5CFC2287FADF9DFFF968CD84C847388 /* FloatyManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FloatyManager.swift; path = Sources/FloatyManager.swift; sourceTree = "<group>"; };
+		A6921F5A4DF45D9C2143A76CDF149D80 /* DJILiveViewRenderTexture.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DJILiveViewRenderTexture.m; path = DJIWidget/VideoPreviewer/Render/Texture/DJILiveViewRenderTexture.m; sourceTree = "<group>"; };
+		A86C76523B807A2B906D7FB3D4086777 /* DJILiveViewRenderHighlightShadowFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DJILiveViewRenderHighlightShadowFilter.m; path = DJIWidget/VideoPreviewer/Render/HighLightShadowFilter/DJILiveViewRenderHighlightShadowFilter.m; sourceTree = "<group>"; };
+		AAB3F9DFCE00F0EC89B2295E1EB46C32 /* DJIPixelCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DJIPixelCache.m; path = DJIWidget/VideoPreviewer/Helper/DJIImageCache/DJIPixelCache.m; sourceTree = "<group>"; };
+		AB0A7572E542D89D824D65C7CE9B6CEA /* DJIAlbumTransfer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DJIAlbumTransfer.m; path = DJIWidget/VideoPreviewer/DJIAlbumTransfer.m; sourceTree = "<group>"; };
+		AD5DA3D382EBC16968F09188AB7F2962 /* djiffremux.c */ = {isa = PBXFileReference; includeInIndex = 1; name = djiffremux.c; path = DJIWidget/VideoLiveCamera/RecordVideo/VideoWriter/Context/Muxer/djiffremux.c; sourceTree = "<group>"; };
+		ADB803F5F3AC4804A7C4DB9338A37402 /* DJIH264PocQueue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DJIH264PocQueue.m; path = DJIWidget/VideoPreviewer/Helper/DJIH264PocQueue.m; sourceTree = "<group>"; };
+		AF2CDF7B732610D3494CF714626B787E /* DJIImageCacheQueue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DJIImageCacheQueue.m; path = DJIWidget/VideoPreviewer/Helper/DJIImageCache/DJIImageCacheQueue.m; sourceTree = "<group>"; };
+		AF791B5A669DCCC6E05A54AB1AC4A317 /* DJIVideoFeedCachingSession.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DJIVideoFeedCachingSession.m; path = DJIWidget/VideoLiveCamera/RecordVideo/DJIVideoFeedCachingSession.m; sourceTree = "<group>"; };
+		AFA9BD719CA8F6A8C3FDCF5D91E5F2C8 /* DJIImageCalibrateColorConverter_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DJIImageCalibrateColorConverter_Private.h; path = DJIWidget/VideoPreviewer/Helper/ImageCalibrate/DJIImageCalibrateColorConverter_Private.h; sourceTree = "<group>"; };
+		B3ACEA1D75701190044D3A464253DB02 /* DJIVideoPreviewer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DJIVideoPreviewer.m; path = DJIWidget/VideoPreviewer/DJIVideoPreviewer.m; sourceTree = "<group>"; };
+		B3E4B6FC259E52A909144D1DEA864106 /* DJILiveViewDammyCameraSessionProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DJILiveViewDammyCameraSessionProtocol.h; path = DJIWidget/VideoLiveCamera/DJILiveViewDammyCameraSessionProtocol.h; sourceTree = "<group>"; };
+		B79D0997006A06E3D3753B49B4D15807 /* DJIImageCalibrateHelperHolder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DJIImageCalibrateHelperHolder.m; path = DJIWidget/VideoPreviewer/Helper/ImageCalibrate/Holder/DJIImageCalibrateHelperHolder.m; sourceTree = "<group>"; };
+		B7A097128EEE24A77E56A008F507DAF5 /* FFmpeg.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FFmpeg.framework; path = FFmpeg/FFmpeg.framework; sourceTree = "<group>"; };
+		BA5A2C3E8BD90EDE257B870A4883E50F /* DJIVideoHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DJIVideoHelper.h; path = DJIWidget/VideoPreviewer/DJIVideoHelper.h; sourceTree = "<group>"; };
+		BBFBC98DDFC3EA94D4A4F699816A925A /* FloatyViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FloatyViewController.swift; path = Sources/FloatyViewController.swift; sourceTree = "<group>"; };
+		BD13B7E5BFA859514FD91CC13DD83148 /* DJIJpegStreamImageDecoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DJIJpegStreamImageDecoder.m; path = DJIWidget/VideoPreviewer/DJIJpegStreamImageDecoder.m; sourceTree = "<group>"; };
+		BDBFCC57131B0500755F98E812C86BE1 /* DJIVideoWriterDiskHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DJIVideoWriterDiskHelper.m; path = DJIWidget/VideoLiveCamera/RecordVideo/VideoWriter/DJIVideoWriterDiskHelper.m; sourceTree = "<group>"; };
+		BF544E1CC9E81AB13FB6EE439F3F2607 /* DJIStreamCommon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DJIStreamCommon.m; path = DJIWidget/VideoPreviewer/DJIStreamCommon.m; sourceTree = "<group>"; };
+		BFB7E755629F1512C1AA97B84F94B415 /* DJIVideoPresentViewAdjustHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DJIVideoPresentViewAdjustHelper.h; path = DJIWidget/VideoPreviewer/Helper/DJIVideoPresentViewAdjustHelper.h; sourceTree = "<group>"; };
+		C1FCC72A45959D1CEEE4B69E090001C5 /* DJIReverseDLogFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DJIReverseDLogFilter.m; path = DJIWidget/VideoPreviewer/Render/ReversDLogLookup/DJIReverseDLogFilter.m; sourceTree = "<group>"; };
+		C2F3B0A22C1160C45849A878E8BDBBC7 /* DJIVideoFrameSyncPoint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DJIVideoFrameSyncPoint.m; path = DJIWidget/VideoLiveCamera/RecordVideo/VideoWriter/Context/DJIVideoFrameSyncPoint.m; sourceTree = "<group>"; };
+		C39A023CCD48A202C4F6910250A19754 /* DJICustomVideoFrameExtractor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DJICustomVideoFrameExtractor.h; path = DJIWidget/VideoPreviewer/DJICustomVideoFrameExtractor.h; sourceTree = "<group>"; };
+		C3E2E3D821D769A3881451126BECE645 /* DJIH264PocQueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DJIH264PocQueue.h; path = DJIWidget/VideoPreviewer/Helper/DJIH264PocQueue.h; sourceTree = "<group>"; };
+		C48ABDB2CFBDC475C444D3A1A8DBAB73 /* DJIVideoFrameSyncPoint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DJIVideoFrameSyncPoint.h; path = DJIWidget/VideoLiveCamera/RecordVideo/VideoWriter/Context/DJIVideoFrameSyncPoint.h; sourceTree = "<group>"; };
+		C615D816C0741C281ABD54B337221882 /* DJIRtmpMuxer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DJIRtmpMuxer.m; path = DJIWidget/RTMPProcessor/DJIRtmpMuxer.m; sourceTree = "<group>"; };
+		C70EA99B7F0963FEF157C0E681290CD4 /* DJIVTH264CompressConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DJIVTH264CompressConfiguration.h; path = DJIWidget/VideoService/VTH264Encoder/DJIVTH264CompressConfiguration.h; sourceTree = "<group>"; };
+		C7CB7950D8BEA635539AE964DBA4A849 /* DJIVTH264Encoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DJIVTH264Encoder.h; path = DJIWidget/VideoService/VTH264Encoder/DJIVTH264Encoder.h; sourceTree = "<group>"; };
+		C83A117A6C134C1C4AEA2E65464E6E4F /* DJIImageCalibrateColorCPUConverter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DJIImageCalibrateColorCPUConverter.m; path = DJIWidget/VideoPreviewer/Helper/ImageCalibrate/DJIImageCalibrateColorCPUConverter.m; sourceTree = "<group>"; };
+		C843CA1D041BB9A495B0828AC484082D /* DJIAlbumHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DJIAlbumHandler.h; path = DJIWidget/VideoLiveCamera/ShootPhoto/DJIAlbumHandler.h; sourceTree = "<group>"; };
+		C97364F6337AF5794D43BC0F6F7F2AD9 /* DJIDecodeImageCalibrateDataSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DJIDecodeImageCalibrateDataSource.h; path = DJIWidget/VideoPreviewer/Helper/ImageCalibrate/DJIDecodeImageCalibrateDataSource.h; sourceTree = "<group>"; };
+		C9B6CFDD0596F967278440764F9740CF /* DJIImageCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DJIImageCache.h; path = DJIWidget/VideoPreviewer/Helper/DJIImageCache/DJIImageCache.h; sourceTree = "<group>"; };
+		CD228B57B2A1E1ED8DF83C4CFA2067C6 /* DJILiveViewRenderDisplayView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DJILiveViewRenderDisplayView.m; path = DJIWidget/VideoPreviewer/Render/Base/DJILiveViewRenderDisplayView.m; sourceTree = "<group>"; };
+		CDE25FD507D209254204A1B7D76C0224 /* DJILiveViewRenderProgram.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DJILiveViewRenderProgram.h; path = DJIWidget/VideoPreviewer/Render/Base/DJILiveViewRenderProgram.h; sourceTree = "<group>"; };
+		CE4A1ED561639C180742DB47E00AF9EA /* DJILiveViewRenderContext.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DJILiveViewRenderContext.m; path = DJIWidget/VideoPreviewer/Render/Base/DJILiveViewRenderContext.m; sourceTree = "<group>"; };
+		D188557F01785C4F2D6B7EFB6902D76B /* DJIWidget-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DJIWidget-prefix.pch"; sourceTree = "<group>"; };
+		D1E3851475AF2649FCE2EFD7AFB8AB29 /* DJIAudioSampleBuffer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DJIAudioSampleBuffer.h; path = DJIWidget/RTMPProcessor/DJIAudioSampleBuffer.h; sourceTree = "<group>"; };
+		D2FDEC000FF25A04ECEE53563B3224FD /* NSError+DJIVTH264CompressSession.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSError+DJIVTH264CompressSession.h"; path = "DJIWidget/VideoService/VTH264Encoder/NSError+DJIVTH264CompressSession.h"; sourceTree = "<group>"; };
+		D5FF15C6E05C41092590B18E67FF2C06 /* DJILiveViewRenderColorMatrixFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DJILiveViewRenderColorMatrixFilter.m; path = DJIWidget/VideoPreviewer/Render/ColorMatrixFilter/DJILiveViewRenderColorMatrixFilter.m; sourceTree = "<group>"; };
+		D636F551C1447D46B66F06154E15494E /* DJICustomVideoFrameExtractor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DJICustomVideoFrameExtractor.m; path = DJIWidget/VideoPreviewer/DJICustomVideoFrameExtractor.m; sourceTree = "<group>"; };
+		D7FD750C9F10E98128DB203D7CB79E74 /* DJIDecodeFrameRateMonitor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DJIDecodeFrameRateMonitor.m; path = DJIWidget/VideoPreviewer/DJIDecodeFrameRateMonitor.m; sourceTree = "<group>"; };
+		D9C9AB9225CB774E5AB814A2C11DE712 /* Pods-Dronorama.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Dronorama.modulemap"; sourceTree = "<group>"; };
+		D9D73532F306AE09B4EFCE3CE0080C7E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9FE2B6A28DEBF58C5C41FE452691890 /* DJILiveViewRenderPicutre.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DJILiveViewRenderPicutre.h; path = DJIWidget/VideoPreviewer/Render/Texture/DJILiveViewRenderPicutre.h; sourceTree = "<group>"; };
+		DA04E687104BABAC8681231003747004 /* DJIVideoWriterContext.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DJIVideoWriterContext.m; path = DJIWidget/VideoLiveCamera/RecordVideo/VideoWriter/Context/DJIVideoWriterContext.m; sourceTree = "<group>"; };
+		DB71C3C7AC5A8CD357C8A7A3C7026431 /* DJIVTH264Compressor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DJIVTH264Compressor.h; path = DJIWidget/VideoService/VTH264Encoder/DJIVTH264Compressor.h; sourceTree = "<group>"; };
+		E013C52081BC4F8AF0EFB95DB169BDA7 /* DJILiveViewFrameBuffer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DJILiveViewFrameBuffer.m; path = DJIWidget/VideoPreviewer/Render/Base/DJILiveViewFrameBuffer.m; sourceTree = "<group>"; };
+		E1D1056BB1498195B06C8B32BA1639ED /* DJILiveViewColorMonitorFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DJILiveViewColorMonitorFilter.m; path = DJIWidget/VideoPreviewer/Render/ColorMonitor/DJILiveViewColorMonitorFilter.m; sourceTree = "<group>"; };
+		E204F8F40F9975C5E0ADEA9F094A45CE /* DJIWidget-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DJIWidget-dummy.m"; sourceTree = "<group>"; };
+		E2DFE090258C4ECBEFBE70727A845064 /* DJIImageCalibrateColorGPUConverter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DJIImageCalibrateColorGPUConverter.h; path = DJIWidget/VideoPreviewer/Helper/ImageCalibrate/DJIImageCalibrateColorGPUConverter.h; sourceTree = "<group>"; };
+		E37C27C43F066628DDCAFDD97907047E /* DJIMovieGLView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DJIMovieGLView.h; path = DJIWidget/VideoPreviewer/DJIMovieGLView.h; sourceTree = "<group>"; };
+		E5F46ED11C0FE88BCE2E37FFA720C149 /* DJIDecodeImageCalibrateHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DJIDecodeImageCalibrateHelper.m; path = DJIWidget/VideoPreviewer/Helper/ImageCalibrate/DJIDecodeImageCalibrateHelper.m; sourceTree = "<group>"; };
+		E7BB13DF14840198D4612426DE6F04CD /* DJIWidget.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DJIWidget.xcconfig; sourceTree = "<group>"; };
+		E81E9BAFD94E687E913FA0A6C9CAF05F /* DJIImageCalibrateHelperHolder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DJIImageCalibrateHelperHolder.h; path = DJIWidget/VideoPreviewer/Helper/ImageCalibrate/Holder/DJIImageCalibrateHelperHolder.h; sourceTree = "<group>"; };
+		EBEEE651720EBC243363D18C199D99B1 /* DJIJpegStreamImageDecoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DJIJpegStreamImageDecoder.h; path = DJIWidget/VideoPreviewer/DJIJpegStreamImageDecoder.h; sourceTree = "<group>"; };
+		ECF2A2B0720AE923C22BED3192888BE0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		ED05D7E0D7646C034832EF1F60194B74 /* Floaty-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Floaty-umbrella.h"; sourceTree = "<group>"; };
+		EDB9CDAB472BC54A59F213253F8C4F5D /* DJICameraRemotePlayerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DJICameraRemotePlayerView.m; path = DJIWidget/VideoService/H1Camera/DJICameraRemotePlayerView.m; sourceTree = "<group>"; };
+		EE763C915719B93A60C9C1D8212FC08D /* DJIImageCalibrateFilterDataSource.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DJIImageCalibrateFilterDataSource.m; path = DJIWidget/VideoPreviewer/Helper/ImageCalibrate/DJIImageCalibrateFilterDataSource.m; sourceTree = "<group>"; };
+		EEFFF4C889E1CE98E9140322FCF6412D /* DJIH264VTDecode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DJIH264VTDecode.m; path = DJIWidget/VideoPreviewer/DJIH264VTDecode.m; sourceTree = "<group>"; };
+		EF09928FCE1D8C101FAF7C84548023CE /* DJISoftwareDecodeProcessor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DJISoftwareDecodeProcessor.m; path = DJIWidget/VideoPreviewer/DJISoftwareDecodeProcessor.m; sourceTree = "<group>"; };
+		EF8E478757C43DE84EB16483B0AD198B /* DJIDecodeFrameRateMonitor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DJIDecodeFrameRateMonitor.h; path = DJIWidget/VideoPreviewer/DJIDecodeFrameRateMonitor.h; sourceTree = "<group>"; };
+		F01D369B6DD689D8BBB4E3E9E55F9939 /* DJILiveViewFrameBuffer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DJILiveViewFrameBuffer.h; path = DJIWidget/VideoPreviewer/Render/Base/DJILiveViewFrameBuffer.h; sourceTree = "<group>"; };
+		F0F293271E90AB1A430A99FD8872C52F /* DJILiveViewDammyCameraStructs.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DJILiveViewDammyCameraStructs.h; path = DJIWidget/VideoLiveCamera/DJILiveViewDammyCameraStructs.h; sourceTree = "<group>"; };
+		F1DBC845AE2FF386485F6B8508E75F69 /* DJIVideoPreviewSmoothHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DJIVideoPreviewSmoothHelper.m; path = DJIWidget/RTMPProcessor/DJIVideoPreviewSmoothHelper.m; sourceTree = "<group>"; };
+		F3A97E8EEF5117296ED37A955D2A5175 /* DJIImageCalibrateHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DJIImageCalibrateHelper.h; path = DJIWidget/VideoPreviewer/Helper/DJIImageCalibrateHelper.h; sourceTree = "<group>"; };
+		F3CA740C4044DA6AE1FD02A195C74369 /* Pods-Dronorama.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Dronorama.release.xcconfig"; sourceTree = "<group>"; };
+		F3CBF4D5EE114D836AF46BF949C17C9A /* DJIDecodeImageCalibrateHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DJIDecodeImageCalibrateHelper.h; path = DJIWidget/VideoPreviewer/Helper/ImageCalibrate/DJIDecodeImageCalibrateHelper.h; sourceTree = "<group>"; };
+		F51AFDBC90C6A167A0E348AD4744744E /* Pods-Dronorama-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Dronorama-resources.sh"; sourceTree = "<group>"; };
+		F76FF5748E627368487AC8ABCE2D550B /* DJIVTH264DecoderIFrameData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DJIVTH264DecoderIFrameData.m; path = DJIWidget/VideoService/DJIVTH264DecoderIFrameData.m; sourceTree = "<group>"; };
+		F775E067FA3FBD0483302A6B463962CC /* DJILiveViewRenderProgram.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DJILiveViewRenderProgram.m; path = DJIWidget/VideoPreviewer/Render/Base/DJILiveViewRenderProgram.m; sourceTree = "<group>"; };
+		F77A623ADECDC867E7E5D2EA14F8E6C2 /* DJILiveViewCalibrateFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DJILiveViewCalibrateFilter.h; path = DJIWidget/VideoPreviewer/Render/CalibrateFilter/DJILiveViewCalibrateFilter.h; sourceTree = "<group>"; };
+		F7F81B355D6A45D1A8A4CC9D063658C7 /* DJILiveViewDammyCameraTakePhotoSession.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DJILiveViewDammyCameraTakePhotoSession.h; path = DJIWidget/VideoLiveCamera/ShootPhoto/DJILiveViewDammyCameraTakePhotoSession.h; sourceTree = "<group>"; };
+		F8C7551292403CD1074AB98ED562D095 /* DJIImageCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DJIImageCache.m; path = DJIWidget/VideoPreviewer/Helper/DJIImageCache/DJIImageCache.m; sourceTree = "<group>"; };
+		F9D337CFED9263917F9415BD7FE48B24 /* DJISmoothDecode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DJISmoothDecode.h; path = DJIWidget/VideoPreviewer/DJISmoothDecode.h; sourceTree = "<group>"; };
+		FA0D8278ED788A048C81AEDCCA7C6C3A /* DJILiveViewCalibrateFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DJILiveViewCalibrateFilter.m; path = DJIWidget/VideoPreviewer/Render/CalibrateFilter/DJILiveViewCalibrateFilter.m; sourceTree = "<group>"; };
+		FA928DEC18DAE30C97D0F3BE9FEC2CB3 /* DJIVideoPreviewer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DJIVideoPreviewer.h; path = DJIWidget/VideoPreviewer/DJIVideoPreviewer.h; sourceTree = "<group>"; };
+		FABF8FA5164A9593385F52B156C75F46 /* DJIImageCalibrationFastFrame_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DJIImageCalibrationFastFrame_Private.h; path = DJIWidget/VideoPreviewer/Helper/DJIImageCalibrationFrame/DJIImageCalibrationFastFrame_Private.h; sourceTree = "<group>"; };
+		FE6E341CA0F2CF3178E1C22B5B9CE33E /* DJILiveViewRenderDisplayView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DJILiveViewRenderDisplayView.h; path = DJIWidget/VideoPreviewer/Render/Base/DJILiveViewRenderDisplayView.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9F6C6A55FC0B1E28EF39A86A51A7DA65 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53422EC247BF79093130090CF395E903 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EACC9913FE2A5BD73832A3F17EA83C05 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D04B90A3E439A9EEE3AEB70438033533 /* Foundation.framework in Frameworks */,
+				FECE5BFA4195537CCEAD32901B42CFC4 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F18E27A5617A52691BE6C595D9B3D82A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A8D96CF63136307DEB707B125E7B0AE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E169A450ED27AC725DF52953F66D11E0 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3D731C384FA42B2AB651ECC0354260A6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				31D8891ECCF8FD73090BF2D37BBF3BCC /* DJISDK.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3E17E49FFAC08150B5219CBA1A5B4B9B /* Pods-Dronorama */ = {
+			isa = PBXGroup;
+			children = (
+				738A444404ED9DF0556DB2F2FBD58B0F /* Info.plist */,
+				D9C9AB9225CB774E5AB814A2C11DE712 /* Pods-Dronorama.modulemap */,
+				14AFEE2E8CC98D31445FFA56D4364591 /* Pods-Dronorama-acknowledgements.markdown */,
+				614C3A7C4ADA50CB49FFD0B7FD39F57D /* Pods-Dronorama-acknowledgements.plist */,
+				492385E29550D58181F298DA0826B409 /* Pods-Dronorama-dummy.m */,
+				7C27B965649AAD5093E8836B8CF59AEB /* Pods-Dronorama-frameworks.sh */,
+				F51AFDBC90C6A167A0E348AD4744744E /* Pods-Dronorama-resources.sh */,
+				0FE2D46E86850EBB5CD8B384175F3A82 /* Pods-Dronorama-umbrella.h */,
+				A13138FB95A05009A4659B477F14087A /* Pods-Dronorama.debug.xcconfig */,
+				F3CA740C4044DA6AE1FD02A195C74369 /* Pods-Dronorama.release.xcconfig */,
+			);
+			name = "Pods-Dronorama";
+			path = "Target Support Files/Pods-Dronorama";
+			sourceTree = "<group>";
+		};
+		4E74E975EEB564A42B9CCDD05A38BBF0 /* Floaty */ = {
+			isa = PBXGroup;
+			children = (
+				81B5DAEDF604C91B4F40BBE2D4F899FB /* Floaty.swift */,
+				5BEF0C9D2E9455F9964784D7A8F04994 /* FloatyDelegate.swift */,
+				41180D5BEEAAEE51E1838D8DBE846155 /* FloatyItem.swift */,
+				A5CFC2287FADF9DFFF968CD84C847388 /* FloatyManager.swift */,
+				BBFBC98DDFC3EA94D4A4F699816A925A /* FloatyViewController.swift */,
+				775D32C109BA1AB640AC2A83F0E28268 /* FloatyWindow.swift */,
+				9C78F3C46193CE11C177C69FF24F036A /* Support Files */,
+			);
+			name = Floaty;
+			path = Floaty;
+			sourceTree = "<group>";
+		};
+		683DE8E66D631B9E726F5A6B4C1E155E /* DJI-UXSDK-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				87DD04394164BADEE53644E916248C5E /* Frameworks */,
+			);
+			name = "DJI-UXSDK-iOS";
+			path = "DJI-UXSDK-iOS";
+			sourceTree = "<group>";
+		};
+		72D7F8845E06BAE44644F21141FBE4EF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B7A097128EEE24A77E56A008F507DAF5 /* FFmpeg.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		828BFB5A48A5CE35B2F0A3C626610CAD /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4DBABDC33C2C271AE811BBE653492C15 /* DJIWidget.modulemap */,
+				E7BB13DF14840198D4612426DE6F04CD /* DJIWidget.xcconfig */,
+				E204F8F40F9975C5E0ADEA9F094A45CE /* DJIWidget-dummy.m */,
+				D188557F01785C4F2D6B7EFB6902D76B /* DJIWidget-prefix.pch */,
+				7F1557340DA422253A042F7AA72AAA0D /* DJIWidget-umbrella.h */,
+				697E0FCAA5D82F2E3B0FA4D189379B8D /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/DJIWidget";
+			sourceTree = "<group>";
+		};
+		8306CAB87EDCC17E174BB7A5665F9FC8 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3E17E49FFAC08150B5219CBA1A5B4B9B /* Pods-Dronorama */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		87DD04394164BADEE53644E916248C5E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2CB79595951EA9FFDF19B7A5E526BDA5 /* DJIUXSDK.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		97872A9E7F5FE1696A0014C7A3D6BD50 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				103DFDABD709C5C2D453CFC9127018DD /* DJIWidget.framework */,
+				32C689CFC905C08E5F8A1ACB179394CF /* Floaty.framework */,
+				7D25CD607A9B0EE227212C543A9242C0 /* Pods_Dronorama.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9C78F3C46193CE11C177C69FF24F036A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				39076C20FF5CA563649C414EE23B55C4 /* Floaty.modulemap */,
+				040B40CB3ADF2243EE61CF9312049AAC /* Floaty.xcconfig */,
+				95F019B9BBBAEEDB0CD8EA01A226AC06 /* Floaty-dummy.m */,
+				17A4E75E521CCBB4EC4E3F1E388BAA75 /* Floaty-prefix.pch */,
+				ED05D7E0D7646C034832EF1F60194B74 /* Floaty-umbrella.h */,
+				D9D73532F306AE09B4EFCE3CE0080C7E /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Floaty";
+			sourceTree = "<group>";
+		};
+		B4558D2BAF64EC1F707722EE3B44E121 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C827147C6F807F5E6548957E4A3DD573 /* DJI-SDK-iOS */,
+				683DE8E66D631B9E726F5A6B4C1E155E /* DJI-UXSDK-iOS */,
+				EEEAA672FACF5FEF35B426267CF44589 /* DJIWidget */,
+				4E74E975EEB564A42B9CCDD05A38BBF0 /* Floaty */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C827147C6F807F5E6548957E4A3DD573 /* DJI-SDK-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3D731C384FA42B2AB651ECC0354260A6 /* Frameworks */,
+			);
+			name = "DJI-SDK-iOS";
+			path = "DJI-SDK-iOS";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				24390EFD555DD124430DFF9724065945 /* Podfile */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				B4558D2BAF64EC1F707722EE3B44E121 /* Pods */,
+				97872A9E7F5FE1696A0014C7A3D6BD50 /* Products */,
+				8306CAB87EDCC17E174BB7A5665F9FC8 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		E169A450ED27AC725DF52953F66D11E0 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				40CB39E715FBCDAA142E6513E126200A /* Foundation.framework */,
+				ECF2A2B0720AE923C22BED3192888BE0 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		EEEAA672FACF5FEF35B426267CF44589 /* DJIWidget */ = {
+			isa = PBXGroup;
+			children = (
+				C843CA1D041BB9A495B0828AC484082D /* DJIAlbumHandler.h */,
+				602EA2F3A112EE0BC67BF98ABED12C1E /* DJIAlbumHandler.m */,
+				1E267E3C88D0E482974CF91CEB28ED58 /* DJIAlbumTransfer.h */,
+				AB0A7572E542D89D824D65C7CE9B6CEA /* DJIAlbumTransfer.m */,
+				D1E3851475AF2649FCE2EFD7AFB8AB29 /* DJIAudioSampleBuffer.h */,
+				0620FE9BA4A0955D3503604899C75A58 /* DJIAudioSampleBuffer.m */,
+				2422707809E31B5FA2E495DADA0B5507 /* DJICalibratePixelBufferProvider.h */,
+				4A570528FE3DE183D3D3B497FABA0D77 /* DJICalibratePixelBufferProvider.m */,
+				1A96E3F5F64BFA0ADD22A219B2933628 /* DJICameraRemotePlayerView.h */,
+				EDB9CDAB472BC54A59F213253F8C4F5D /* DJICameraRemotePlayerView.m */,
+				C39A023CCD48A202C4F6910250A19754 /* DJICustomVideoFrameExtractor.h */,
+				D636F551C1447D46B66F06154E15494E /* DJICustomVideoFrameExtractor.m */,
+				EF8E478757C43DE84EB16483B0AD198B /* DJIDecodeFrameRateMonitor.h */,
+				D7FD750C9F10E98128DB203D7CB79E74 /* DJIDecodeFrameRateMonitor.m */,
+				372A2EF21FFE76B5B478ED4E5C5C0F97 /* DJIDecodeImageCalibrateDataBuffer.h */,
+				3456653B6110E065C0AD80CA573CE865 /* DJIDecodeImageCalibrateDataBuffer.m */,
+				C97364F6337AF5794D43BC0F6F7F2AD9 /* DJIDecodeImageCalibrateDataSource.h */,
+				36E8A82BA277C2E09E9906E4187A754B /* DJIDecodeImageCalibrateDataSource.m */,
+				F3CBF4D5EE114D836AF46BF949C17C9A /* DJIDecodeImageCalibrateHelper.h */,
+				E5F46ED11C0FE88BCE2E37FFA720C149 /* DJIDecodeImageCalibrateHelper.m */,
+				AD5DA3D382EBC16968F09188AB7F2962 /* djiffremux.c */,
+				4E2260952E395ABFA347C63CE583F892 /* djiffremux.h */,
+				98B41527EBB1CCC328067ABC98733BA6 /* DJIH264FrameRawLayerDumper.h */,
+				9F60BED877E671EC45F1AAB8633BCBDC /* DJIH264FrameRawLayerDumper.m */,
+				C3E2E3D821D769A3881451126BECE645 /* DJIH264PocQueue.h */,
+				ADB803F5F3AC4804A7C4DB9338A37402 /* DJIH264PocQueue.m */,
+				3685847C6F907ABCAAA2D1F6872F0A6B /* DJIH264VTDecode.h */,
+				EEFFF4C889E1CE98E9140322FCF6412D /* DJIH264VTDecode.m */,
+				C9B6CFDD0596F967278440764F9740CF /* DJIImageCache.h */,
+				F8C7551292403CD1074AB98ED562D095 /* DJIImageCache.m */,
+				A3E052E9F5DD1765DB0DE6BA5F4C8B99 /* DJIImageCacheQueue.h */,
+				AF2CDF7B732610D3494CF714626B787E /* DJIImageCacheQueue.m */,
+				971E71823EF446EA9C6958155F20A2C0 /* DJIImageCalibrateColorConverter.h */,
+				48E4512FCBB85A92B5ADA1DB7182C0E5 /* DJIImageCalibrateColorConverter.m */,
+				AFA9BD719CA8F6A8C3FDCF5D91E5F2C8 /* DJIImageCalibrateColorConverter_Private.h */,
+				2429EA2BFB054AF86DEAB2CD04F34EDA /* DJIImageCalibrateColorCPUConverter.h */,
+				C83A117A6C134C1C4AEA2E65464E6E4F /* DJIImageCalibrateColorCPUConverter.m */,
+				E2DFE090258C4ECBEFBE70727A845064 /* DJIImageCalibrateColorGPUConverter.h */,
+				461B4256E4C3AECB3D4878BB2CBAD68E /* DJIImageCalibrateColorGPUConverter.m */,
+				959B4201C5E0927E3785BB2EA6CACB63 /* DJIImageCalibrateFilterDataSource.h */,
+				EE763C915719B93A60C9C1D8212FC08D /* DJIImageCalibrateFilterDataSource.m */,
+				F3A97E8EEF5117296ED37A955D2A5175 /* DJIImageCalibrateHelper.h */,
+				61569E8AABACB1992DD4CC927B0A3F53 /* DJIImageCalibrateHelper.m */,
+				666DAB509D5792F37930F35A0D491D5E /* DJIImageCalibrateHelper_Private.h */,
+				E81E9BAFD94E687E913FA0A6C9CAF05F /* DJIImageCalibrateHelperHolder.h */,
+				B79D0997006A06E3D3753B49B4D15807 /* DJIImageCalibrateHelperHolder.m */,
+				1B515E433F374EAF363AA9E795C16599 /* DJIImageCalibrationFastFrame.h */,
+				8AFE5CC95EDAADD2D3EC98CF75FC938B /* DJIImageCalibrationFastFrame.m */,
+				FABF8FA5164A9593385F52B156C75F46 /* DJIImageCalibrationFastFrame_Private.h */,
+				A46E486E9642EF1E249EC524F136B690 /* DJIImageCalibrationFrame.h */,
+				84B10527519D37D719391F91A26C1D15 /* DJIImageCalibrationFrame.m */,
+				9C4F5BC29BC81971E350686A7A56ECBA /* DJIImageCalibrationFrameQueue.h */,
+				4C0B91881B1ED683713669E6F9447DBB /* DJIImageCalibrationFrameQueue.m */,
+				EBEEE651720EBC243363D18C199D99B1 /* DJIJpegStreamImageDecoder.h */,
+				BD13B7E5BFA859514FD91CC13DD83148 /* DJIJpegStreamImageDecoder.m */,
+				1A2CF9BF8A9BC268AB5416CC2D921172 /* DJILB2AUDRemoveParser.h */,
+				7C5D5BB0569E7398C0CCDC45F739042B /* DJILB2AUDRemoveParser.m */,
+				F77A623ADECDC867E7E5D2EA14F8E6C2 /* DJILiveViewCalibrateFilter.h */,
+				FA0D8278ED788A048C81AEDCCA7C6C3A /* DJILiveViewCalibrateFilter.m */,
+				8346BF8FC23339EEE2DBC016D0A4A580 /* DJILiveViewColorMonitorFilter.h */,
+				E1D1056BB1498195B06C8B32BA1639ED /* DJILiveViewColorMonitorFilter.m */,
+				69FFF126D9D60622735C05369820AC1A /* DJILiveViewColorSpaceFilter.h */,
+				36DB9D5D26FB387582FA10B2E883EA80 /* DJILiveViewColorSpaceFilter.m */,
+				B3E4B6FC259E52A909144D1DEA864106 /* DJILiveViewDammyCameraSessionProtocol.h */,
+				F0F293271E90AB1A430A99FD8872C52F /* DJILiveViewDammyCameraStructs.h */,
+				F7F81B355D6A45D1A8A4CC9D063658C7 /* DJILiveViewDammyCameraTakePhotoSession.h */,
+				5FED9231F81E73F2D38CBC736B5DE771 /* DJILiveViewDammyCameraTakePhotoSession.m */,
+				F01D369B6DD689D8BBB4E3E9E55F9939 /* DJILiveViewFrameBuffer.h */,
+				E013C52081BC4F8AF0EFB95DB169BDA7 /* DJILiveViewFrameBuffer.m */,
+				A278FF56FB953560515A26C840CDDCD0 /* DJILiveViewFrameBuffer_Private.h */,
+				9CF3906FA6CF18DAE2B5B19E81CA29EE /* DJILiveViewRenderColorMatrixFilter.h */,
+				D5FF15C6E05C41092590B18E67FF2C06 /* DJILiveViewRenderColorMatrixFilter.m */,
+				687206A2B151F86BB9147D357B729FCF /* DJILiveViewRenderCommon.h */,
+				42E7542911E2F56849E45B7FAF753AF6 /* DJILiveViewRenderCommon.m */,
+				8CE2DF751D0D5DF67C8D73FA22411B7E /* DJILiveViewRenderContext.h */,
+				CE4A1ED561639C180742DB47E00AF9EA /* DJILiveViewRenderContext.m */,
+				2539F3E004F8530D7BB9B2B88F9CACEC /* DJILiveViewRenderDataSource.h */,
+				0E2BD44A3D08DDBB55BCD9637F09C5D5 /* DJILiveViewRenderDataSource.m */,
+				3A5FB452BDB3097E2F45CCBB32644E3B /* DJILiveViewRenderDataSource_Private.h */,
+				FE6E341CA0F2CF3178E1C22B5B9CE33E /* DJILiveViewRenderDisplayView.h */,
+				CD228B57B2A1E1ED8DF83C4CFA2067C6 /* DJILiveViewRenderDisplayView.m */,
+				86828B3A62BF51B5BA6D6FE4436C5E7A /* DJILiveViewRenderFilter.h */,
+				378506BBB82DF6012EAE3F0DDEE81F23 /* DJILiveViewRenderFilter.m */,
+				12C5BA50FAE9F6D2D72D45AF35EA13A9 /* DJILiveViewRenderFocusWarningFilter.h */,
+				46443794C5097C556DB67104D89D8EE7 /* DJILiveViewRenderFocusWarningFilter.m */,
+				8DC54C01086FCE703CF35056B4BB8D3E /* DJILiveViewRenderHighlightShadowFilter.h */,
+				A86C76523B807A2B906D7FB3D4086777 /* DJILiveViewRenderHighlightShadowFilter.m */,
+				1600F59470291C2B0B5F4037C13049EE /* DJILiveViewRenderHSBFilter.h */,
+				056E396027743942DAB8EDF53FAE19C7 /* DJILiveViewRenderHSBFilter.m */,
+				12998DE14922BBDE61640BFBABCAFE36 /* DJILiveViewRenderLookupFilter.h */,
+				389EE57B2FA4D7A30264BA45F0081B36 /* DJILiveViewRenderLookupFilter.m */,
+				550DFA63ABB61160BECD44FC3A98AC63 /* DJILiveViewRenderPass.h */,
+				345D18658F812C36EA9BD48E65317C5B /* DJILiveViewRenderPass.m */,
+				D9FE2B6A28DEBF58C5C41FE452691890 /* DJILiveViewRenderPicutre.h */,
+				02F4332A78BD715112A7D4F5C83B122A /* DJILiveViewRenderPicutre.m */,
+				CDE25FD507D209254204A1B7D76C0224 /* DJILiveViewRenderProgram.h */,
+				F775E067FA3FBD0483302A6B463962CC /* DJILiveViewRenderProgram.m */,
+				2F200F8CEEED6EA6868786315C7AD105 /* DJILiveViewRenderScaleFilter.h */,
+				8F63EFB74E9E30FF46C649E9E58F1590 /* DJILiveViewRenderScaleFilter.m */,
+				9B744602709D47059BA7ADE6FFDEC9D8 /* DJILiveViewRenderTexture.h */,
+				A6921F5A4DF45D9C2143A76CDF149D80 /* DJILiveViewRenderTexture.m */,
+				6756CD4569119DE18193C67C3147D338 /* DJIMavic2ProCameraImageCalibrateFilterDataSource.h */,
+				699CE905A2F96036DA5279A238862FD0 /* DJIMavic2ProCameraImageCalibrateFilterDataSource.m */,
+				094E6A1E9D27DF9ED678EABEF157035A /* DJIMavic2ZoomCameraImageCalibrateFilterDataSource.h */,
+				8944DBBF1240401F80D465C8BF070564 /* DJIMavic2ZoomCameraImageCalibrateFilterDataSource.m */,
+				E37C27C43F066628DDCAFDD97907047E /* DJIMovieGLView.h */,
+				880D766987DF13D413D61DFAA78AF042 /* DJIMovieGLView.m */,
+				2FCFAE15517AD985AE9FA8FF81C2FC96 /* DJIPixelCache.h */,
+				AAB3F9DFCE00F0EC89B2295E1EB46C32 /* DJIPixelCache.m */,
+				5ACBA83ACAFB5942EC8A3195E861A084 /* DJIReverseDLogFilter.h */,
+				C1FCC72A45959D1CEEE4B69E090001C5 /* DJIReverseDLogFilter.m */,
+				7FD53DB9E6B5FA30CF1629606465C702 /* DJIRtmpIFrameProvider.h */,
+				3050D8639E57005D8F1DCB309789324B /* DJIRtmpIFrameProvider.m */,
+				90F1081258C4AE88C9D3DAA4285A3A28 /* DJIRtmpMuxer.h */,
+				C615D816C0741C281ABD54B337221882 /* DJIRtmpMuxer.m */,
+				70A4CAF6DD18125049BE74D8CEE0BFD3 /* DJIRTPlayerRenderView.h */,
+				21A4713ED36446427113D134F4C6FC48 /* DJIRTPlayerRenderView.m */,
+				F9D337CFED9263917F9415BD7FE48B24 /* DJISmoothDecode.h */,
+				4C7C24B1A26D5C9806A4180DCD1D8B35 /* DJISoftwareDecodeProcessor.h */,
+				EF09928FCE1D8C101FAF7C84548023CE /* DJISoftwareDecodeProcessor.m */,
+				3498298ACF2C6036332462E44B9D7107 /* DJIStreamCommon.h */,
+				BF544E1CC9E81AB13FB6EE439F3F2607 /* DJIStreamCommon.m */,
+				95BF5A52062D431802D95CFDED80B919 /* DJISymbols.h */,
+				1CD9F476124FCA1E3C93A1EDF050D0AE /* DJIVideoFeedCachingSession.h */,
+				AF791B5A669DCCC6E05A54AB1AC4A317 /* DJIVideoFeedCachingSession.m */,
+				C48ABDB2CFBDC475C444D3A1A8DBAB73 /* DJIVideoFrameSyncPoint.h */,
+				C2F3B0A22C1160C45849A878E8BDBBC7 /* DJIVideoFrameSyncPoint.m */,
+				BA5A2C3E8BD90EDE257B870A4883E50F /* DJIVideoHelper.h */,
+				81AC6010B98340862348F952D07223B6 /* DJIVideoHelper.m */,
+				85BCADFE361FDA1E7D46F5A7345173A2 /* DJIVideoPoolMp4Muxer.h */,
+				0C8F404BF5222850F89CEE24C5D72313 /* DJIVideoPoolMp4Muxer.m */,
+				1C90000A591BCBA199AA2038E3528A6F /* DJIVideoPoolStructs.h */,
+				BFB7E755629F1512C1AA97B84F94B415 /* DJIVideoPresentViewAdjustHelper.h */,
+				3A5249DEB89A6F65FA4E30269CC8FC81 /* DJIVideoPresentViewAdjustHelper.m */,
+				FA928DEC18DAE30C97D0F3BE9FEC2CB3 /* DJIVideoPreviewer.h */,
+				B3ACEA1D75701190044D3A464253DB02 /* DJIVideoPreviewer.m */,
+				37FE9247CD5834A637B184A5E5A58A07 /* DJIVideoPreviewerH264Parser.h */,
+				04A0A66F73D48A122373073E1487E532 /* DJIVideoPreviewerH264Parser.m */,
+				5AA1339775D1AB759266DC769586BD46 /* DJIVideoPreviewSmoothHelper.h */,
+				F1DBC845AE2FF386485F6B8508E75F69 /* DJIVideoPreviewSmoothHelper.m */,
+				297D918407D6A24C328A6123A8366AB2 /* DJIVideoWriter.h */,
+				6B8CE05F583663EC2142AB7FB6C7391C /* DJIVideoWriter.m */,
+				2D51AB4A61D77033E2CD458C317E2B1D /* DJIVideoWriterContext.h */,
+				DA04E687104BABAC8681231003747004 /* DJIVideoWriterContext.m */,
+				9E5F242F57B38DD7790BA9AC04ADCAC7 /* DJIVideoWriterDiskHelper.h */,
+				BDBFCC57131B0500755F98E812C86BE1 /* DJIVideoWriterDiskHelper.m */,
+				C70EA99B7F0963FEF157C0E681290CD4 /* DJIVTH264CompressConfiguration.h */,
+				27B8707B902452CA2B8A75249E7258FA /* DJIVTH264CompressConfiguration.m */,
+				DB71C3C7AC5A8CD357C8A7A3C7026431 /* DJIVTH264Compressor.h */,
+				45A9548089B7A04F0814B71FB881D763 /* DJIVTH264Compressor.m */,
+				0475A3D8815214659F53A4A26E028681 /* DJIVTH264CompressSession.h */,
+				3FECA9F41F79F2BDBA23E6D726B56EC6 /* DJIVTH264CompressSession.m */,
+				9823807AB148A75347280533BBA0ED57 /* DJIVTH264DecoderIFrameData.h */,
+				F76FF5748E627368487AC8ABCE2D550B /* DJIVTH264DecoderIFrameData.m */,
+				C7CB7950D8BEA635539AE964DBA4A849 /* DJIVTH264Encoder.h */,
+				02B63476FD726F0BB0EA0AF8F0D765EA /* DJIVTH264Encoder.m */,
+				8DB03A4793E053F871B2BB482EA80DAD /* DJIWidget.h */,
+				7A0DC6B5079B797B59B16AB61C1899CE /* DJIWidgetAsyncCommandQueue.h */,
+				353D38DA2B2C8DFE6EFB7A340ECB4C04 /* DJIWidgetAsyncCommandQueue.m */,
+				843F71CC21D34ABCA82567AD8B84ABC7 /* DJIWidgetLinkQueue.h */,
+				395D6FE05A0D07559F02F31743201AC4 /* DJIWidgetLinkQueue.m */,
+				953EA174C45AC453DC61A299D5C28A57 /* DJIWidgetMacros.h */,
+				D2FDEC000FF25A04ECEE53563B3224FD /* NSError+DJIVTH264CompressSession.h */,
+				78153FF977A3BEF8341DB957A42BB7B7 /* NSError+DJIVTH264CompressSession.m */,
+				72D7F8845E06BAE44644F21141FBE4EF /* Frameworks */,
+				828BFB5A48A5CE35B2F0A3C626610CAD /* Support Files */,
+			);
+			name = DJIWidget;
+			path = DJIWidget;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		87D221ADA056373FC0D0EF58523BF237 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C683F1D39DBB5B5C9A32D1E43B5B6DC /* Floaty-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EA386B147A3BEC3B2134189E67782C6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6C2947316DEC6E07F370F731C9753B9 /* Pods-Dronorama-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8DFB2590A4B1F66D7558C9E0B277BC2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F73AE7DC7485FABF99E576CD56253CDC /* DJIAlbumHandler.h in Headers */,
+				CC42697DE20970EC919FC65F79033087 /* DJIAlbumTransfer.h in Headers */,
+				B62E8FF9FB6C791953027AC012BE735E /* DJIAudioSampleBuffer.h in Headers */,
+				9080A0BB98AF7C3EF4D11CFD4F1BE9E6 /* DJICalibratePixelBufferProvider.h in Headers */,
+				DBC0C81DC0661544C0CE7203F272221E /* DJICameraRemotePlayerView.h in Headers */,
+				BBF849BCB277490F498F3074EA8B30BE /* DJICustomVideoFrameExtractor.h in Headers */,
+				A527A5577370502E14E4A99AAF1F44B5 /* DJIDecodeFrameRateMonitor.h in Headers */,
+				7D103AED335B2D101CC2E8E06EB3F594 /* DJIDecodeImageCalibrateDataBuffer.h in Headers */,
+				661C51E6BC98353F1CD324959CA82968 /* DJIDecodeImageCalibrateDataSource.h in Headers */,
+				96D373E9F022E59E1FAE7FDE66B5DBAA /* DJIDecodeImageCalibrateHelper.h in Headers */,
+				64BDDC07DFA692CED3B52618CC8B0978 /* djiffremux.h in Headers */,
+				55FDF921F88D40EA2245D15C0EA6ADD8 /* DJIH264FrameRawLayerDumper.h in Headers */,
+				C4DC74D251F2EFA403AABDD3087F124B /* DJIH264PocQueue.h in Headers */,
+				459933EACD049323EFC820A42A30624A /* DJIH264VTDecode.h in Headers */,
+				78524B3B78745E80708A093A75199E12 /* DJIImageCache.h in Headers */,
+				88C860B42ECBC56A52EEC79FA73EB584 /* DJIImageCacheQueue.h in Headers */,
+				0FE5474C59C51B009B6AA554CB78FBA4 /* DJIImageCalibrateColorConverter.h in Headers */,
+				3669BD6065B8ACEBDFF3D69117960994 /* DJIImageCalibrateColorConverter_Private.h in Headers */,
+				B76C301B2D2C727B477D54272ACAD3DA /* DJIImageCalibrateColorCPUConverter.h in Headers */,
+				70806CB22AB50F13E4624E258A6EA61A /* DJIImageCalibrateColorGPUConverter.h in Headers */,
+				BD1C0788D1327CE4055367D22B774101 /* DJIImageCalibrateFilterDataSource.h in Headers */,
+				D10501B18EEC9B6D38C6613C555B4264 /* DJIImageCalibrateHelper.h in Headers */,
+				A1D71EAAAEA2E2ECE6902DD387C393B9 /* DJIImageCalibrateHelper_Private.h in Headers */,
+				79F0AD1461848CD9A1CBC5EC3AE5B07B /* DJIImageCalibrateHelperHolder.h in Headers */,
+				9021911EE8FF8C43D007D28411FD1490 /* DJIImageCalibrationFastFrame.h in Headers */,
+				C9F150130BBD7962E2BA65CEC766723A /* DJIImageCalibrationFastFrame_Private.h in Headers */,
+				8912866896EB268EBE000DB05FF0EE66 /* DJIImageCalibrationFrame.h in Headers */,
+				01B12650B193CBBC9680B0CC43C2B200 /* DJIImageCalibrationFrameQueue.h in Headers */,
+				BA5187E9FA2A1FDEDB60411111722FD7 /* DJIJpegStreamImageDecoder.h in Headers */,
+				E010D6E693B168D65C0930081176CB33 /* DJILB2AUDRemoveParser.h in Headers */,
+				6445ABA5B02FBCC699E8EACEF4450B5F /* DJILiveViewCalibrateFilter.h in Headers */,
+				063EEBA97E640BE2FDEA58687EAE5FA9 /* DJILiveViewColorMonitorFilter.h in Headers */,
+				8BAB96F3B002AF5BA0B71F358F5E84DB /* DJILiveViewColorSpaceFilter.h in Headers */,
+				EAE2CC3636B12CF3CBA94BB309C8EDC6 /* DJILiveViewDammyCameraSessionProtocol.h in Headers */,
+				6D8F88A79AC5F04111276A73F5C2E837 /* DJILiveViewDammyCameraStructs.h in Headers */,
+				5807BDABAC597879DE071D0BE8ECC87A /* DJILiveViewDammyCameraTakePhotoSession.h in Headers */,
+				8F6D2612BE8AD7B8C6BFAC0D33F620C2 /* DJILiveViewFrameBuffer.h in Headers */,
+				98F968AA8D1EE87E958A60ABA69FB6D9 /* DJILiveViewFrameBuffer_Private.h in Headers */,
+				5A4FF7F650239D2FE55A1D4357EF1CFB /* DJILiveViewRenderColorMatrixFilter.h in Headers */,
+				4731D2CF81F13AFC2A2E7C855C8B85C4 /* DJILiveViewRenderCommon.h in Headers */,
+				DE3A9A4C7A5834F5FEDF020F375B3001 /* DJILiveViewRenderContext.h in Headers */,
+				274C5B1D67D1057BD31F2E72B199D857 /* DJILiveViewRenderDataSource.h in Headers */,
+				AE3EC7929F3753BDA488672F460594F7 /* DJILiveViewRenderDataSource_Private.h in Headers */,
+				56E961CC724DCE8C8804838C889770B8 /* DJILiveViewRenderDisplayView.h in Headers */,
+				DC9914B24E09B8DA7BFADFB3A9793F36 /* DJILiveViewRenderFilter.h in Headers */,
+				2FADB922E0723CF135DC8E72812D13AF /* DJILiveViewRenderFocusWarningFilter.h in Headers */,
+				9F06297371CAF93F709A5865E864AF52 /* DJILiveViewRenderHighlightShadowFilter.h in Headers */,
+				9F726AD50197335EEF559D75898F2404 /* DJILiveViewRenderHSBFilter.h in Headers */,
+				8A477B7D4B69B13F48A4FF7E2B46B9B2 /* DJILiveViewRenderLookupFilter.h in Headers */,
+				183FD1CD4ED903AE2199719329CC934E /* DJILiveViewRenderPass.h in Headers */,
+				2D49459207F7D7529311E9868941E551 /* DJILiveViewRenderPicutre.h in Headers */,
+				45C5CDE41F59698E6C862F6F0D01F85F /* DJILiveViewRenderProgram.h in Headers */,
+				4D5FB512DF233B61724E43B4AD86157B /* DJILiveViewRenderScaleFilter.h in Headers */,
+				67B1F3B7ED1AAE92D47FE9AE191F8AF1 /* DJILiveViewRenderTexture.h in Headers */,
+				BAF652A234AD00EA80029FE84AB81D69 /* DJIMavic2ProCameraImageCalibrateFilterDataSource.h in Headers */,
+				9061A5CB2E45A0D70EA018D4DBD46E69 /* DJIMavic2ZoomCameraImageCalibrateFilterDataSource.h in Headers */,
+				1D40D37B369B8935A026049C7882F402 /* DJIMovieGLView.h in Headers */,
+				550370B087FE8DB1B8B760FF099AD2C7 /* DJIPixelCache.h in Headers */,
+				DD6D9F9D3F749AC738D6B98C4775A0FA /* DJIReverseDLogFilter.h in Headers */,
+				365D48078754B079D21B5218A6576891 /* DJIRtmpIFrameProvider.h in Headers */,
+				078E34666EABCA1314F93C50EEBE8927 /* DJIRtmpMuxer.h in Headers */,
+				0A64533FB0316FF4F041670481E1C50D /* DJIRTPlayerRenderView.h in Headers */,
+				FCC03A9EE4332EFCE94F6086152C6F97 /* DJISmoothDecode.h in Headers */,
+				C64DCC544F38B4C10709E98EE8415F0C /* DJISoftwareDecodeProcessor.h in Headers */,
+				D33303A15C4436F9DFA19028E3BCE072 /* DJIStreamCommon.h in Headers */,
+				E101C62F7F458646AD2D963DAE379F19 /* DJISymbols.h in Headers */,
+				36C1B59B3480FFA5E7ED1FF1E8D33C09 /* DJIVideoFeedCachingSession.h in Headers */,
+				AF0D3741B0B65E9355CEC98622C8CF34 /* DJIVideoFrameSyncPoint.h in Headers */,
+				DADF9C7EFDD2B6F81DEB678F1A09E17A /* DJIVideoHelper.h in Headers */,
+				51750C6464DBE36108FFE01204CC2063 /* DJIVideoPoolMp4Muxer.h in Headers */,
+				268A753E5FA33F19EEE43692B3AB573A /* DJIVideoPoolStructs.h in Headers */,
+				5D2FFF516643BAA008C91DDA2C51B538 /* DJIVideoPresentViewAdjustHelper.h in Headers */,
+				BA2189B428231D54EB52C4FDB612654E /* DJIVideoPreviewer.h in Headers */,
+				47F462277A47F6CE95F68584AEBCE178 /* DJIVideoPreviewerH264Parser.h in Headers */,
+				F03494F241B81683D781C4037E5F7000 /* DJIVideoPreviewSmoothHelper.h in Headers */,
+				3E9CAA380C4271901782AD35680C95CE /* DJIVideoWriter.h in Headers */,
+				DA0B0D06C0BD27DAA5C47CE9D8CBF7F2 /* DJIVideoWriterContext.h in Headers */,
+				BB6515F843A8B00F7F7249836633944D /* DJIVideoWriterDiskHelper.h in Headers */,
+				526B3169A907C6051DDB6D2B6CDC0088 /* DJIVTH264CompressConfiguration.h in Headers */,
+				CBAE09F1EEA692FFD0544DEB908D986A /* DJIVTH264Compressor.h in Headers */,
+				1855A74386D50881B1D0EB4CECB1FF15 /* DJIVTH264CompressSession.h in Headers */,
+				133930B436A0E27015C068D040BB0B3C /* DJIVTH264DecoderIFrameData.h in Headers */,
+				185666D8E4745CE99CD56E35FF0DF109 /* DJIVTH264Encoder.h in Headers */,
+				2D23EC2A929054BB47AE4A8DF06FCA7C /* DJIWidget-umbrella.h in Headers */,
+				68C751775C86C150A74166137B396D61 /* DJIWidget.h in Headers */,
+				E77D764605B0CE1AD9453A61A9BEC882 /* DJIWidgetAsyncCommandQueue.h in Headers */,
+				B1F306FD7B2EE150072B31CC16B08EDE /* DJIWidgetLinkQueue.h in Headers */,
+				83C5EBEFDC932F3FB01644F5D279DD23 /* DJIWidgetMacros.h in Headers */,
+				ED24790407BED2EBB6AD3ED60CA64642 /* NSError+DJIVTH264CompressSession.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		13474EC7ADCE7604DB465F44697389B7 /* DJIWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F997BA971852673A75E0D58F328B48DA /* Build configuration list for PBXNativeTarget "DJIWidget" */;
+			buildPhases = (
+				E8DFB2590A4B1F66D7558C9E0B277BC2 /* Headers */,
+				F8BC0BACE32153510425137459B80DAC /* Sources */,
+				9F6C6A55FC0B1E28EF39A86A51A7DA65 /* Frameworks */,
+				F61DC183728AC98728BBC3CC7147F34D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DJIWidget;
+			productName = DJIWidget;
+			productReference = 103DFDABD709C5C2D453CFC9127018DD /* DJIWidget.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		77A3A9E3D85FC13D0EFB117A4EA24866 /* Pods-Dronorama */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F398455C40B3AD9CE0DBEFC2324551FA /* Build configuration list for PBXNativeTarget "Pods-Dronorama" */;
+			buildPhases = (
+				8EA386B147A3BEC3B2134189E67782C6 /* Headers */,
+				B7F55DD4C51F40A598833E874630DECF /* Sources */,
+				F18E27A5617A52691BE6C595D9B3D82A /* Frameworks */,
+				CE5F666F74205D229E33264BBCF7EF29 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4A66A16D7C951638A0B135BC29717FA0 /* PBXTargetDependency */,
+				6AD4310CACF50DCC0FE1DD7C370BAE11 /* PBXTargetDependency */,
+			);
+			name = "Pods-Dronorama";
+			productName = "Pods-Dronorama";
+			productReference = 7D25CD607A9B0EE227212C543A9242C0 /* Pods_Dronorama.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8CFF7D709CC2B880BE7BC2613974B4D2 /* Floaty */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 726F59FC44630FCE8AD5E8B6FFEBE083 /* Build configuration list for PBXNativeTarget "Floaty" */;
+			buildPhases = (
+				87D221ADA056373FC0D0EF58523BF237 /* Headers */,
+				1D3609F65FE818F08114816E5C13A2C4 /* Sources */,
+				EACC9913FE2A5BD73832A3F17EA83C05 /* Frameworks */,
+				F2C5FE057FBB2456319E41EF7E6F7841 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Floaty;
+			productName = Floaty;
+			productReference = 32C689CFC905C08E5F8A1ACB179394CF /* Floaty.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 97872A9E7F5FE1696A0014C7A3D6BD50 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				13474EC7ADCE7604DB465F44697389B7 /* DJIWidget */,
+				8CFF7D709CC2B880BE7BC2613974B4D2 /* Floaty */,
+				77A3A9E3D85FC13D0EFB117A4EA24866 /* Pods-Dronorama */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE5F666F74205D229E33264BBCF7EF29 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2C5FE057FBB2456319E41EF7E6F7841 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F61DC183728AC98728BBC3CC7147F34D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D3609F65FE818F08114816E5C13A2C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE2C1F0BB25A80E9E6855382485325A1 /* Floaty-dummy.m in Sources */,
+				24BA6ABFF18B4666A933ADA0A7795702 /* Floaty.swift in Sources */,
+				23728654CB62B77FA85FE88AB5CA274C /* FloatyDelegate.swift in Sources */,
+				244C567AA378CBE88870661E24623494 /* FloatyItem.swift in Sources */,
+				35C67DAAE2538D2FB8B257450EC47E97 /* FloatyManager.swift in Sources */,
+				26C5F660E819B9ECFF0E546AF61779B1 /* FloatyViewController.swift in Sources */,
+				2B8E3BE6D56942C94195A2047B25F83C /* FloatyWindow.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7F55DD4C51F40A598833E874630DECF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E37D7977B7D62876208466C8CE056DF5 /* Pods-Dronorama-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8BC0BACE32153510425137459B80DAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9FDC4D664A3F7525A108865951CCACA /* DJIAlbumHandler.m in Sources */,
+				963F1F75365EE56C59056A4CB426DC8E /* DJIAlbumTransfer.m in Sources */,
+				72238204905F7B304BFC7BEA9EB6F4FB /* DJIAudioSampleBuffer.m in Sources */,
+				C8EFA6BD8B744A76348E1C1DFFE283A5 /* DJICalibratePixelBufferProvider.m in Sources */,
+				57A84A428AC20FBAC8DE1E121DFBB0CD /* DJICameraRemotePlayerView.m in Sources */,
+				A755FF5D99E42FD2EF7ABFACE0D95381 /* DJICustomVideoFrameExtractor.m in Sources */,
+				0318E0E21B1F8AF8A712B789D3B9D550 /* DJIDecodeFrameRateMonitor.m in Sources */,
+				B962036025A4029517FEB9C58FE1A660 /* DJIDecodeImageCalibrateDataBuffer.m in Sources */,
+				D28B02CE11055B04C7402466DE5A80B7 /* DJIDecodeImageCalibrateDataSource.m in Sources */,
+				EA23888361483F20F3CFF4E9EB55F876 /* DJIDecodeImageCalibrateHelper.m in Sources */,
+				A0E8FAEB561F4AE81DDE50501E387B12 /* djiffremux.c in Sources */,
+				A8589661952C89FF2A7DEFA2B748508D /* DJIH264FrameRawLayerDumper.m in Sources */,
+				2A3CB4488AA82BAA01101589793B0517 /* DJIH264PocQueue.m in Sources */,
+				68D56C9C1CBAC153C5552B6166504BCA /* DJIH264VTDecode.m in Sources */,
+				2BC8383571850CEE31B0A828E2DB5BD5 /* DJIImageCache.m in Sources */,
+				4414C24123A14C05DB9816C24E7AD9AA /* DJIImageCacheQueue.m in Sources */,
+				20C9206CA819D1ADDB6E5BE516C69C90 /* DJIImageCalibrateColorConverter.m in Sources */,
+				B5294124F46A8F7A6638C67524A262BF /* DJIImageCalibrateColorCPUConverter.m in Sources */,
+				FC341E32447A72BA4B09D1D8FF784BFA /* DJIImageCalibrateColorGPUConverter.m in Sources */,
+				939F66C3E86D3FA4E0FDA2DD449FF3B0 /* DJIImageCalibrateFilterDataSource.m in Sources */,
+				CF097E4E1A8616B0492BC1FD9D5DDA00 /* DJIImageCalibrateHelper.m in Sources */,
+				CBEFF2DBF35F4761603C8A17BD7F4AFB /* DJIImageCalibrateHelperHolder.m in Sources */,
+				CC7FA7718DC37B789E511BFE89E8F49B /* DJIImageCalibrationFastFrame.m in Sources */,
+				B97F4D5353D2F75BD64A1F6BF84BDC7D /* DJIImageCalibrationFrame.m in Sources */,
+				B227E9E9FEB36E42489740CF65FB5D77 /* DJIImageCalibrationFrameQueue.m in Sources */,
+				226C8EDA92BE7C365B424A336C3ED822 /* DJIJpegStreamImageDecoder.m in Sources */,
+				908AF79CBC6691226760DD050780F5C5 /* DJILB2AUDRemoveParser.m in Sources */,
+				D023AC63953263392A4659FA0A0D6B17 /* DJILiveViewCalibrateFilter.m in Sources */,
+				A351B0037FAC4291F05D30D8256F84D3 /* DJILiveViewColorMonitorFilter.m in Sources */,
+				D2A2A5AC971FFE5D878C0EBD6F2CBFC8 /* DJILiveViewColorSpaceFilter.m in Sources */,
+				B2961887EF70AC2AC910E654D85E2DC1 /* DJILiveViewDammyCameraTakePhotoSession.m in Sources */,
+				DE6ECB96E25D06CAEA1D5F9121C3BD83 /* DJILiveViewFrameBuffer.m in Sources */,
+				051E770939684828A48621D216D1B9A4 /* DJILiveViewRenderColorMatrixFilter.m in Sources */,
+				69DB6D4220ABB7A069585DCADC848706 /* DJILiveViewRenderCommon.m in Sources */,
+				80737F2ABF3E30B0986DD1A999F40BD2 /* DJILiveViewRenderContext.m in Sources */,
+				14B93D723CD1167257BA83F7DB151BD4 /* DJILiveViewRenderDataSource.m in Sources */,
+				9A6D45DF5963CC332C25E92935EEF419 /* DJILiveViewRenderDisplayView.m in Sources */,
+				FCE593C143AF9730C8646210F23A60EF /* DJILiveViewRenderFilter.m in Sources */,
+				F6879EA069405582C22DD733B689D78D /* DJILiveViewRenderFocusWarningFilter.m in Sources */,
+				6F0C523D95A17D8BCB52BCC1CE4052B5 /* DJILiveViewRenderHighlightShadowFilter.m in Sources */,
+				B903EA1DC54D6EB4E8045686655A72E8 /* DJILiveViewRenderHSBFilter.m in Sources */,
+				C38095C6F1CDA23B42160D4D9102F2D6 /* DJILiveViewRenderLookupFilter.m in Sources */,
+				C7C17524B4CDA82FC2D5BCB19DF936D4 /* DJILiveViewRenderPass.m in Sources */,
+				FF820A8DC0ED1E0A040E6CD25E4A6061 /* DJILiveViewRenderPicutre.m in Sources */,
+				886B7B2438EDD192121E8DE26710A6A4 /* DJILiveViewRenderProgram.m in Sources */,
+				B133ED6B7CE5D5CEFFB83A0D9CEB7C45 /* DJILiveViewRenderScaleFilter.m in Sources */,
+				1A3B4B1359BAF88351B2B21589DC17F6 /* DJILiveViewRenderTexture.m in Sources */,
+				76696216C4694BFEB12C94BBC9942AE7 /* DJIMavic2ProCameraImageCalibrateFilterDataSource.m in Sources */,
+				3E4FE9E267BD18D73B1C1D718340C948 /* DJIMavic2ZoomCameraImageCalibrateFilterDataSource.m in Sources */,
+				A13D3E4BD66DEF49755BFAB378546B2E /* DJIMovieGLView.m in Sources */,
+				5492E8304ED4E54504D7CE0102D85D09 /* DJIPixelCache.m in Sources */,
+				0C4EE12D552F40C5458C8D93E478EA31 /* DJIReverseDLogFilter.m in Sources */,
+				8763703D1209D26E44F116BB9074994E /* DJIRtmpIFrameProvider.m in Sources */,
+				0C71F00DF276F48265B422BA1C85B4D1 /* DJIRtmpMuxer.m in Sources */,
+				89C08996AD479A23F675ECA1275300B9 /* DJIRTPlayerRenderView.m in Sources */,
+				74FC69379744542BB3AF17D75D651F3F /* DJISoftwareDecodeProcessor.m in Sources */,
+				F505442D01EBC8A659CFC7220D362C59 /* DJIStreamCommon.m in Sources */,
+				4C5D8FBADBFB025CE8F9E3FBF5E934F3 /* DJIVideoFeedCachingSession.m in Sources */,
+				0EC6CA039B826C06F2E028E55BB656A6 /* DJIVideoFrameSyncPoint.m in Sources */,
+				3980D4323E8FFB9203985E056911B905 /* DJIVideoHelper.m in Sources */,
+				C4BD1C9A56ACDABDA725A22F1E2E54C4 /* DJIVideoPoolMp4Muxer.m in Sources */,
+				EF220058414156E80B32AC1F9860C450 /* DJIVideoPresentViewAdjustHelper.m in Sources */,
+				C34C1B4B467E75F136ABDBDA8C93789A /* DJIVideoPreviewer.m in Sources */,
+				DA788380AA789A8C87BD09A08E4E0858 /* DJIVideoPreviewerH264Parser.m in Sources */,
+				B25BA998AE24F7831A6D70989925E8AA /* DJIVideoPreviewSmoothHelper.m in Sources */,
+				3E20F1E591895B63B8A01F82F0B8E795 /* DJIVideoWriter.m in Sources */,
+				1C164EF5C474C05CBB32105A156E5A1E /* DJIVideoWriterContext.m in Sources */,
+				98280E78D0627C191DFFDE2ADD6FD999 /* DJIVideoWriterDiskHelper.m in Sources */,
+				D41E3F787CAB9E4C44439D097FD51DDC /* DJIVTH264CompressConfiguration.m in Sources */,
+				C6325917B473D284C92ECC4A31412AD7 /* DJIVTH264Compressor.m in Sources */,
+				A3B2AB2410AB6D7CE728F4C61EEC6096 /* DJIVTH264CompressSession.m in Sources */,
+				293EA4FC750D3444B761B100EEAB5998 /* DJIVTH264DecoderIFrameData.m in Sources */,
+				A9ED640813D0EC8582D11729B93F2631 /* DJIVTH264Encoder.m in Sources */,
+				7A8590F03D11BFFA799E151199C3FBC9 /* DJIWidget-dummy.m in Sources */,
+				C1AD22567C816F371D04DE5BAFBEE9E9 /* DJIWidgetAsyncCommandQueue.m in Sources */,
+				76D9CAD998277244B9EF210777F7D0FA /* DJIWidgetLinkQueue.m in Sources */,
+				079062FCE7109868115B94E1DACDE20C /* NSError+DJIVTH264CompressSession.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4A66A16D7C951638A0B135BC29717FA0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DJIWidget;
+			target = 13474EC7ADCE7604DB465F44697389B7 /* DJIWidget */;
+			targetProxy = 9BF965ABACCA4D458E9A4E50333B7630 /* PBXContainerItemProxy */;
+		};
+		6AD4310CACF50DCC0FE1DD7C370BAE11 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Floaty;
+			target = 8CFF7D709CC2B880BE7BC2613974B4D2 /* Floaty */;
+			targetProxy = 4917D98FB7CFFB168361F91AF0C09FB5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		068A219F9C384FD572D523EEE317D0C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		30A13BCDEAAC4A99F1851B7D204A7740 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 040B40CB3ADF2243EE61CF9312049AAC /* Floaty.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Floaty/Floaty-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Floaty/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Floaty/Floaty.modulemap";
+				PRODUCT_MODULE_NAME = Floaty;
+				PRODUCT_NAME = Floaty;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5C56A62D7561C9AAD6EE4F1B768F7888 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A13138FB95A05009A4659B477F14087A /* Pods-Dronorama.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Dronorama/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Dronorama/Pods-Dronorama.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6E65C93229B865FA18B62D9AFF3EC37A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3CA740C4044DA6AE1FD02A195C74369 /* Pods-Dronorama.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Dronorama/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Dronorama/Pods-Dronorama.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		98318CDEAF21EE8A5EA64D77FC7A6FDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7BB13DF14840198D4612426DE6F04CD /* DJIWidget.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DJIWidget/DJIWidget-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DJIWidget/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/DJIWidget/DJIWidget.modulemap";
+				PRODUCT_MODULE_NAME = DJIWidget;
+				PRODUCT_NAME = DJIWidget;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DCBA529B1B4B6F6D5E6AAB6A65F73F08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7BB13DF14840198D4612426DE6F04CD /* DJIWidget.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DJIWidget/DJIWidget-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DJIWidget/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/DJIWidget/DJIWidget.modulemap";
+				PRODUCT_MODULE_NAME = DJIWidget;
+				PRODUCT_NAME = DJIWidget;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E29B0B57C53FF8C9953CE2983686A7F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		FA26BED13404B4265757F2F88A9610D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 040B40CB3ADF2243EE61CF9312049AAC /* Floaty.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Floaty/Floaty-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Floaty/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Floaty/Floaty.modulemap";
+				PRODUCT_MODULE_NAME = Floaty;
+				PRODUCT_NAME = Floaty;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E29B0B57C53FF8C9953CE2983686A7F9 /* Debug */,
+				068A219F9C384FD572D523EEE317D0C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		726F59FC44630FCE8AD5E8B6FFEBE083 /* Build configuration list for PBXNativeTarget "Floaty" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA26BED13404B4265757F2F88A9610D1 /* Debug */,
+				30A13BCDEAAC4A99F1851B7D204A7740 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F398455C40B3AD9CE0DBEFC2324551FA /* Build configuration list for PBXNativeTarget "Pods-Dronorama" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C56A62D7561C9AAD6EE4F1B768F7888 /* Debug */,
+				6E65C93229B865FA18B62D9AFF3EC37A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F997BA971852673A75E0D58F328B48DA /* Build configuration list for PBXNativeTarget "DJIWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98318CDEAF21EE8A5EA64D77FC7A6FDF /* Debug */,
+				DCBA529B1B4B6F6D5E6AAB6A65F73F08 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
