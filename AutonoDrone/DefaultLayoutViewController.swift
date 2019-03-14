@@ -287,7 +287,6 @@ class DefaultLayoutViewController: DUXDefaultLayoutViewController, DJISDKManager
         self.mapView = mymapviewController.mapWidgetController?.mapWidget.mapView
         mapView?.delegate = self
         
-        
         mapTapRecognizer = UITapGestureRecognizer(target: self, action: #selector(buttonTapped))
         mapTapRecognizer?.delegate = self as! UIGestureRecognizerDelegate
         mapTapRecognizer?.cancelsTouchesInView = false
@@ -321,6 +320,8 @@ class DefaultLayoutViewController: DUXDefaultLayoutViewController, DJISDKManager
     }
     
     func initUI() {
+        
+        contentViewController?.view.subviews[1].backgroundColor = .black
         
         self.gsButtonVC = DJIGSButtonViewController(nibName: "DJIGSButtonViewController", bundle: Bundle.main)
         self.gsButtonVC?.view.frame = CGRect(x: 44, y: 44, width: (self.gsButtonVC?.view.frame.size.width)!, height: (self.gsButtonVC?.view.frame.size.height)!)

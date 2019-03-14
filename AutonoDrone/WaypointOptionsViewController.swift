@@ -15,8 +15,28 @@ class WaypointOptionsViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-
-
+    @IBOutlet weak var altitudeLabel: UILabel!
+    @IBOutlet weak var headingLabel: UILabel!
+    @IBOutlet weak var gimbalPitchLabel: UILabel!
+    
+    @IBOutlet weak var altitudeSlider: UISlider!
+    @IBOutlet weak var headingSlider: UISlider!
+    @IBOutlet weak var gimbalSlider: UISlider!
+    
+    @IBAction func changeAltitude(_ sender: Any) {
+        altitudeSlider.value = roundf(altitudeSlider.value)
+        altitudeLabel.text = "\(Int(altitudeSlider.value))"
+    }
+    
+    @IBAction func changeHeading(_ sender: Any) {
+        headingSlider.value = roundf(headingSlider.value)
+        headingLabel.text = "\(Int(headingSlider.value))"
+    }
+    
+    @IBAction func changeGimbalPitch(_ sender: Any) {
+        gimbalSlider.value = roundf(gimbalSlider.value)
+        gimbalPitchLabel.text = "\(Int(gimbalSlider.value))"
+    }
     /*
     // MARK: - Navigation
 
