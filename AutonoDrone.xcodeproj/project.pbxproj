@@ -43,7 +43,7 @@
 		9A3535C62238238100E22590 /* Pulsing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pulsing.swift; sourceTree = "<group>"; };
 		9A3535C8223A842500E22590 /* WaypointOptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaypointOptionsViewController.swift; sourceTree = "<group>"; };
 		9A3535C9223A842500E22590 /* WaypointOptionsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WaypointOptionsViewController.xib; sourceTree = "<group>"; };
-		9A597D002230DA8000162B2B /* Dronorama.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dronorama.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A597D002230DA8000162B2B /* AutonoDrone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutonoDrone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A597D032230DA8000162B2B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9A597D082230DA8000162B2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9A597D0A2230DA8000162B2B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -72,7 +72,7 @@
 		9A597CF72230DA8000162B2B = {
 			isa = PBXGroup;
 			children = (
-				9A597D022230DA8000162B2B /* Dronorama */,
+				9A597D022230DA8000162B2B /* AutonoDrone */,
 				9A597D012230DA8000162B2B /* Products */,
 				F449EA646A137DB232926011 /* Pods */,
 				CB66B13F66F506510AAAEE1C /* Frameworks */,
@@ -82,12 +82,12 @@
 		9A597D012230DA8000162B2B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9A597D002230DA8000162B2B /* Dronorama.app */,
+				9A597D002230DA8000162B2B /* AutonoDrone.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9A597D022230DA8000162B2B /* Dronorama */ = {
+		9A597D022230DA8000162B2B /* AutonoDrone */ = {
 			isa = PBXGroup;
 			children = (
 				9A597D032230DA8000162B2B /* AppDelegate.swift */,
@@ -110,7 +110,7 @@
 				9A3535C8223A842500E22590 /* WaypointOptionsViewController.swift */,
 				9A3535C9223A842500E22590 /* WaypointOptionsViewController.xib */,
 			);
-			path = Dronorama;
+			path = AutonoDrone;
 			sourceTree = "<group>";
 		};
 		CB66B13F66F506510AAAEE1C /* Frameworks */ = {
@@ -134,9 +134,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9A597CFF2230DA8000162B2B /* Dronorama */ = {
+		9A597CFF2230DA8000162B2B /* AutonoDrone */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9A597D122230DA8000162B2B /* Build configuration list for PBXNativeTarget "Dronorama" */;
+			buildConfigurationList = 9A597D122230DA8000162B2B /* Build configuration list for PBXNativeTarget "AutonoDrone" */;
 			buildPhases = (
 				816D499615BABC42BEA0E4F4 /* [CP] Check Pods Manifest.lock */,
 				9A597CFC2230DA8000162B2B /* Sources */,
@@ -148,9 +148,9 @@
 			);
 			dependencies = (
 			);
-			name = Dronorama;
+			name = AutonoDrone;
 			productName = Dronorama;
-			productReference = 9A597D002230DA8000162B2B /* Dronorama.app */;
+			productReference = 9A597D002230DA8000162B2B /* AutonoDrone.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -168,7 +168,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 9A597CFB2230DA8000162B2B /* Build configuration list for PBXProject "Dronorama" */;
+			buildConfigurationList = 9A597CFB2230DA8000162B2B /* Build configuration list for PBXProject "AutonoDrone" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -181,7 +181,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9A597CFF2230DA8000162B2B /* Dronorama */,
+				9A597CFF2230DA8000162B2B /* AutonoDrone */,
 			);
 		};
 /* End PBXProject section */
@@ -428,7 +428,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				INFOPLIST_FILE = Dronorama/Info.plist;
+				INFOPLIST_FILE = AutonoDrone/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -454,7 +454,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				INFOPLIST_FILE = Dronorama/Info.plist;
+				INFOPLIST_FILE = AutonoDrone/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -470,7 +470,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9A597CFB2230DA8000162B2B /* Build configuration list for PBXProject "Dronorama" */ = {
+		9A597CFB2230DA8000162B2B /* Build configuration list for PBXProject "AutonoDrone" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9A597D102230DA8000162B2B /* Debug */,
@@ -479,7 +479,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9A597D122230DA8000162B2B /* Build configuration list for PBXNativeTarget "Dronorama" */ = {
+		9A597D122230DA8000162B2B /* Build configuration list for PBXNativeTarget "AutonoDrone" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9A597D132230DA8000162B2B /* Debug */,
