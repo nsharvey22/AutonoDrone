@@ -15,6 +15,9 @@ import GLKit
 
 class DefaultLayoutViewController: DUXDefaultLayoutViewController, DJISDKManagerDelegate, CLLocationManagerDelegate, MKMapViewDelegate, DJIFlightControllerDelegate, DJIGSButtonViewControllerDelegate, DJIWaypointConfigViewControllerDelegate, WaypointOptionsViewControllerDelegate {
     // MARK:- WaypointOptionsViewControllerDelegate
+    func setWaypointNum(in waypointOptionVC: WaypointOptionsViewController?) {
+        waypointOptionVC?.waypointNum.text = "\(String(describing: selectedWPIndex!))"
+    }
     
     func changeHeading(in waypointOptionVC: WaypointOptionsViewController?) {
         selectedWaypoint?.heading = Int(roundf((waypointOptionVC?.headingSlider.value)!))
@@ -252,6 +255,7 @@ class DefaultLayoutViewController: DUXDefaultLayoutViewController, DJISDKManager
     private var waypointOptVC: WaypointOptionsViewController?
     var waypointMission: DJIMutableWaypointMission?
     var selectedWaypoint: DJIWaypoint?
+    var selectedWPIndex: Int?
     
     var mapView: MKMapView?
     let mapController:DJIMapController = DJIMapController()
@@ -338,6 +342,24 @@ class DefaultLayoutViewController: DUXDefaultLayoutViewController, DJISDKManager
         
         contentViewController?.view.subviews[1].backgroundColor = .black
         
+        focusBtn = UIButton(frame: CGRect(x: 700, y: 70, width: 50, height: 50))
+        focusBtn?.backgroundColor = UIColor(red: 0.2, green: 0.2, blue: 0.2, alpha: 0.7)
+        focusBtn?.layer.cornerRadius = 10
+        focusBtn?.setImage(UIImage(named: "location"), for: UIControl.State())
+        focusBtn?.tintColor = .white
+        focusBtn?.addTarget(self, action: #selector(focusMap), for: .touchUpInside)
+        view.addSubview(focusBtn!)
+        focusBtn?.isHidden = true
+        
+        mapTypeBtn = UIButton(frame: CGRect(x: 700, y: 130, width: 50, height: 50))
+        mapTypeBtn?.backgroundColor = UIColor(red: 0.2, green: 0.2, blue: 0.2, alpha: 0.7)
+        mapTypeBtn?.layer.cornerRadius = 10
+        mapTypeBtn?.setImage(UIImage(named: "earth"), for: UIControl.State())
+        mapTypeBtn?.tintColor = .white
+        mapTypeBtn?.addTarget(self, action: #selector(mapType), for: .touchUpInside)
+        view.addSubview(mapTypeBtn!)
+        mapTypeBtn?.isHidden = true
+        
         self.gsButtonVC = DJIGSButtonViewController(nibName: "DJIGSButtonViewController", bundle: Bundle.main)
         self.gsButtonVC?.view.frame = CGRect(x: 44, y: 44, width: (self.gsButtonVC?.view.frame.size.width)!, height: (self.gsButtonVC?.view.frame.size.height)!)
         self.gsButtonVC?.delegate = self
@@ -373,20 +395,19 @@ class DefaultLayoutViewController: DUXDefaultLayoutViewController, DJISDKManager
         
         
         waypointOptVC = WaypointOptionsViewController(nibName: "WaypointOptionsViewController", bundle: Bundle.main)
-       // waypointOptVC?.view.alpha = 0
+        waypointOptVC?.view.alpha = 0
         
         waypointOptVC?.view.autoresizingMask = [.flexibleRightMargin, .flexibleTopMargin, .flexibleBottomMargin]
         
-        let optionsVCOriginX: CGFloat = (view.frame.width - (waypointOptVC?.view.frame.width)!) / 2
-        let optionsVCOriginY: CGFloat = 0
+        let optionsVCOriginX: CGFloat = (view.frame.width - (waypointOptVC?.view.frame.width)!)
         
-        waypointOptVC?.view.frame = CGRect(x: configVCOriginX, y: configVCOriginY, width: (waypointOptVC?.view.frame.width)!, height: (waypointOptVC?.view.frame.height)!)
-        waypointOptVC?.view.center = view.center
+        waypointOptVC?.view.frame = CGRect(x: 600, y: 0, width: (waypointOptVC?.view.frame.width)!, height: view.frame.height)
+
         if UIDevice.current.userInterfaceIdiom == .pad {
             waypointOptVC?.view.center = view.center
         }
         
-      //  waypointOptVC?.delegate = self
+        waypointOptVC?.delegate = self
         view.addSubview((waypointOptVC?.view)!)
         
         button = UIButton(frame: CGRect(x: 120, y: 150, width: 50, height: 50))
@@ -399,23 +420,7 @@ class DefaultLayoutViewController: DUXDefaultLayoutViewController, DJISDKManager
         view.addSubview(button!)
         button?.isHidden = true
         
-        focusBtn = UIButton(frame: CGRect(x: 700, y: 70, width: 50, height: 50))
-        focusBtn?.backgroundColor = UIColor(red: 0.2, green: 0.2, blue: 0.2, alpha: 0.7)
-        focusBtn?.layer.cornerRadius = 10
-        focusBtn?.setImage(UIImage(named: "location"), for: UIControl.State())
-        focusBtn?.tintColor = .white
-        focusBtn?.addTarget(self, action: #selector(focusMap), for: .touchUpInside)
-        view.addSubview(focusBtn!)
-        focusBtn?.isHidden = true
         
-        mapTypeBtn = UIButton(frame: CGRect(x: 700, y: 130, width: 50, height: 50))
-        mapTypeBtn?.backgroundColor = UIColor(red: 0.2, green: 0.2, blue: 0.2, alpha: 0.7)
-        mapTypeBtn?.layer.cornerRadius = 10
-        mapTypeBtn?.setImage(UIImage(named: "earth"), for: UIControl.State())
-        mapTypeBtn?.tintColor = .white
-        mapTypeBtn?.addTarget(self, action: #selector(mapType), for: .touchUpInside)
-        view.addSubview(mapTypeBtn!)
-        mapTypeBtn?.isHidden = true
         
 //        let trackLayer = CAShapeLayer()
 //        let center = view.center
@@ -627,7 +632,7 @@ class DefaultLayoutViewController: DUXDefaultLayoutViewController, DJISDKManager
             markerView.animatesWhenAdded = true
             markerView.markerTintColor = .purple
             markerView.glyphText = annotation.title!
-        
+
             return markerView
         }
         return nil
@@ -648,7 +653,11 @@ class DefaultLayoutViewController: DUXDefaultLayoutViewController, DJISDKManager
             print("selected waypoint: \(String(describing: view.annotation?.title))")
             let num = Int(((view.annotation?.title)!)!)
             selectedWaypoint = waypointMission?.allWaypoints()[num! - 1]
-            
+            selectedWPIndex = num!
+            setWaypointNum(in: waypointOptVC)
+            UIView.animate(withDuration: 0.25, animations: {
+                self.waypointOptVC?.view.alpha = 1.0
+            })
         }
     }
     
@@ -697,8 +706,6 @@ class DefaultLayoutViewController: DUXDefaultLayoutViewController, DJISDKManager
                    // waypoint?.altitude = Float(text)!
                     waypointMission?.add(waypoint!)
                 }
-            
-                print("all waypoints: ", waypointMission?.allWaypoints())
             }
         }
     }

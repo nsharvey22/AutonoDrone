@@ -12,6 +12,7 @@ protocol WaypointOptionsViewControllerDelegate: NSObjectProtocol {
     func changeAltitude(in waypointOptionVC: WaypointOptionsViewController?)
     func changeHeading(in waypointOptionVC: WaypointOptionsViewController?)
     func changeGimbalPitch(in waypointOptionVC: WaypointOptionsViewController?)
+    func setWaypointNum(in waypointOptionVC: WaypointOptionsViewController?)
 }
 
 class WaypointOptionsViewController: UIViewController {
@@ -31,6 +32,10 @@ class WaypointOptionsViewController: UIViewController {
     @IBOutlet weak var gimbalSlider: UISlider!
     
     weak var delegate: WaypointOptionsViewControllerDelegate?
+    
+    func setWaypointNum() {
+        delegate?.setWaypointNum(in: self)
+    }
     
     @IBAction func changeAltitude(_ sender: Any) {
         delegate?.changeAltitude(in: self)
