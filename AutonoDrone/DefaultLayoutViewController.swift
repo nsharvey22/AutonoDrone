@@ -17,6 +17,10 @@ class DefaultLayoutViewController: DUXDefaultLayoutViewController, DJISDKManager
     // MARK:- WaypointOptionsViewControllerDelegate
     func setWaypointNum(in waypointOptionVC: WaypointOptionsViewController?) {
         waypointOptionVC?.waypointNum.text = "\(String(describing: selectedWPIndex!))"
+        waypointOptionVC?.altitudeLabel.text = "\(Int((waypointOptionVC?.altitudeSlider.value)!))"
+        print("new alt text: ", waypointOptionVC?.altitudeLabel.text)
+        waypointOptionVC?.headingLabel.text = "\(Int((waypointOptionVC?.headingSlider.value)!))"
+        waypointOptionVC?.gimbalPitchLabel.text = "\(Int((waypointOptionVC?.gimbalSlider.value)!))"
     }
     
     func changeHeading(in waypointOptionVC: WaypointOptionsViewController?) {
@@ -650,14 +654,19 @@ class DefaultLayoutViewController: DUXDefaultLayoutViewController, DJISDKManager
     
     func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
         if view is MKMarkerAnnotationView {
-            print("selected waypoint: \(String(describing: view.annotation?.title))")
+            
             let num = Int(((view.annotation?.title)!)!)
             selectedWaypoint = waypointMission?.allWaypoints()[num! - 1]
             selectedWPIndex = num!
-            setWaypointNum(in: waypointOptVC)
+            print("selected waypoint: \(String(describing: selectedWPIndex))")
             UIView.animate(withDuration: 0.25, animations: {
                 self.waypointOptVC?.view.alpha = 1.0
+                
             })
+            waypointOptVC?.altitudeSlider.value = (selectedWaypoint?.altitude)!
+            waypointOptVC?.headingSlider.value = Float((selectedWaypoint?.heading)!)
+            waypointOptVC?.gimbalSlider.value = (selectedWaypoint?.gimbalPitch)!
+            setWaypointNum(in: waypointOptVC)
         }
     }
     
@@ -693,7 +702,13 @@ class DefaultLayoutViewController: DUXDefaultLayoutViewController, DJISDKManager
                     gsButtonVC?.floaty.open()
                 }
                 print("added point")
-
+                
+//                if waypointOptVC?.view.alpha != 0 {
+//                    self.waypointOptVC?.altitudeSlider.value = (self.selectedWaypoint?.altitude)!
+//                    self.waypointOptVC?.headingSlider.value = Float((self.selectedWaypoint?.heading)!)
+//                    self.waypointOptVC?.gimbalSlider.value = (self.selectedWaypoint?.gimbalPitch)!
+//                }
+                
                 if (waypointMission == nil) {
                     print("created new mission")
                     waypointMission = DJIMutableWaypointMission()
